@@ -1,0 +1,168 @@
+[20/05/2014 15:15:38] Florian Coulon: en gros
+[20/05/2014 15:15:56] Florian Coulon: La key sera un message chiffré par rsa
+[20/05/2014 15:16:02] François Le Brun: Dac
+[20/05/2014 15:16:08] Florian Coulon: qui fera la damande de paiement
+[20/05/2014 15:16:58] François Le Brun: Donc on a pas deux messages comme ça qui devront être envoyé pendant un paiement
+[20/05/2014 15:17:02] Florian Coulon: à voir pour d'autre méthode de chiffrement. Je te conseil de te renseigner sur internet les moyen de faire du chiffrement lègé (en terme de caractère et déchiffrable par le serveur).
+[20/05/2014 15:17:07] Florian Coulon: Non
+[20/05/2014 15:18:09] Florian Coulon: On peux essayer de trouver différentes solution pour sécurisé le transfert pour évité le vol d'identité
+[20/05/2014 15:18:21] François Le Brun: Dac.
+Sinon pour info, il va falloir revoir le temps de transfert à la hausse pour le question réponse je pense par deux.
+[20/05/2014 15:18:39] François Le Brun: On doit émettre 2 fois une freq si on veux qu'elle soit reçu
+[20/05/2014 15:18:39] Florian Coulon: 2 sec je revient
+[20/05/2014 15:20:41] Florian Coulon: c'est good
+[20/05/2014 15:21:28] François Le Brun: Parce que étant donnée que les phases d'écoute et de réception ne sont pas syncro entre émission et réception, une écoute peux se faire à la moutier d'une émission et donc raté.
+[20/05/2014 15:21:32] François Le Brun: Avec 2 on assure.
+[20/05/2014 15:21:57] Florian Coulon: En gros, je vais essayé de t'expliqué mon idée pour réduire le nombre de caractère et éviter le vole d'identité
+[20/05/2014 15:22:08] François Le Brun: Je t'écoute.
+[20/05/2014 15:22:35] Florian Coulon: Il faut une phase d'initialisation de l'application via internet
+[20/05/2014 15:23:32] Florian Coulon: Là, le téléphone va envoyé son udid qui va être chiffré en SHA-1 sur le serveur
+[20/05/2014 15:23:50] François Le Brun: par internet l'udid ?
+[20/05/2014 15:23:52] Florian Coulon: et avec en plus une pass-key
+[20/05/2014 15:24:02] Florian Coulon: ouep
+[20/05/2014 15:24:19] Florian Coulon: la toute première fois lorsque l'application s'initialise, pas en magasin
+[20/05/2014 15:25:48] Florian Coulon: en gros l'udid grâce à une méthode de chiffrement irréversible type sha-1 et derrière avec une méthode type passe-key.
+[20/05/2014 15:26:08] Florian Coulon: lors de la communication en magasin pour le paiement
+[20/05/2014 15:27:09] Florian Coulon: l'utilisateur va envoyé son udid en claire
+[20/05/2014 15:27:45] Florian Coulon: le serveur va le chiffré avec sha-1 et le comparé à celui en base
+[20/05/2014 15:28:08] Florian Coulon: ensuite, il va le renvoyé en sha-1 + chiffrage pass-key
+[20/05/2014 15:29:08] Florian Coulon: l'utilisateur va devoir taper son code pour le déchiffrage sans passe key et le comparer à l'udid du tel qu'il chiffrera en sha-1 sur le telephone
+[20/05/2014 15:29:35] Florian Coulon: et je pense qu'avec ça la communication est sécurisée.
+[20/05/2014 15:29:41] Florian Coulon: qu'en penses-tu
+[20/05/2014 15:29:58] Florian Coulon: mais je pense que j'ai fais une connerie quelque par
+[20/05/2014 15:30:42] Florian Coulon: à mon avis je suis pas claire ^^
+[20/05/2014 15:32:32] François Le Brun: Att att, j'essaie de comprendre.
+1/ L'utilisateur s'enregistre avec un UID et un MDP sur le site de la société SoundFi. Cet UID est chiffré en SHA-1
+[20/05/2014 15:32:40] François Le Brun: Je suis bon pour l'instant ?
+[20/05/2014 15:32:41] Florian Coulon: ouep
+[20/05/2014 15:32:43] François Le Brun: Ok
+[20/05/2014 15:32:50] François Le Brun: Je suis maintenant à la caisse
+[20/05/2014 15:33:01] François Le Brun: Là, la transmission par le son prend le relais.
+[20/05/2014 15:33:06] Florian Coulon: ouui
+[20/05/2014 15:33:06] François Le Brun: Tu valides ?
+[20/05/2014 15:33:09] François Le Brun: ok
+[20/05/2014 15:34:26] François Le Brun: 2/ La caisse initialise une connexion avec le serveur
+3/ L'utilisateur approche son téléphone et envoi l'UID de l'utilisateur à la caisse qui applique un SHA-1 puis le transmet au serveur
+[20/05/2014 15:34:42] François Le Brun: Encore bon là ?
+[20/05/2014 15:34:52] Florian Coulon: ouep
+[20/05/2014 15:35:18] Florian Coulon: avec une communication de type ssl
+[20/05/2014 15:35:42] Florian Coulon: (https)
+[20/05/2014 15:36:00] François Le Brun: 4/ Le serveur répond à la caisse que l'utilisateur est authentifié et renvoie en meme temps le mot de pass de cet utilisateur (crypté en sha-1 plus le chiffrement par pass-key)
+[20/05/2014 15:36:34] François Le Brun: good ?
+[20/05/2014 15:36:45] Florian Coulon: non, renvoi l'udid chiffré en Sha-1 puis rechiffré derrière avec la pass-key (le mot de passe de l'utilisateur)
+[20/05/2014 15:37:20] François Le Brun: 5/ L'utilisateur est invité à rentrer son mot de pass pour valider la transaction.
+[20/05/2014 15:37:28] Florian Coulon: c'est ça
+[20/05/2014 15:37:52] François Le Brun: Et là il se passe quoi ?
+[20/05/2014 15:37:59] François Le Brun: La caisse compare des valeur ?
+[20/05/2014 15:38:04] François Le Brun: La caisse recommunique avec le serf ?
+[20/05/2014 15:38:07] Florian Coulon: et du coup lorsque l'utilisateur rentre son mot de passe, on récupère l'udid qui ne sera chiffré qu'en sha-1
+[20/05/2014 15:38:15] François Le Brun: "on"
+[20/05/2014 15:38:17] François Le Brun: la caisse ?
+[20/05/2014 15:38:28] Florian Coulon: ahhh
+[20/05/2014 15:38:29] Florian Coulon: merde
+[20/05/2014 15:38:37] Florian Coulon: je viens de me rendre compte.
+[20/05/2014 15:38:48] Florian Coulon: c'est le serveur qui doit dire si c'est ok ...
+[20/05/2014 15:38:52] Florian Coulon: et non le mobile
+[20/05/2014 15:39:00] Florian Coulon: je refléchie
+[20/05/2014 15:41:31] François Le Brun: 1/ L'utilisateur s'enregistre avec un UID et un MDP sur le site de la société SoundFi. Cet UID est chiffré en SHA-1
+2/ La caisse initialise une connexion avec le serveur
+3/ L'utilisateur approche son téléphone et envoi l'UID de l'utilisateur AINSI QUE SON MOT DE PASS à la caisse qui applique un SHA-1 et un pass-key avec le mot de pass utilisateur puis transmet le message chiffré au serveur
+4/ Le serveur décode le SHA-1 puis le paas-key avec le mot de pass dans la base de donnéeet répond à la caisse que l'utilisateur est authentifié et que le paiement est validé.
+[20/05/2014 15:41:33] François Le Brun: ?
+[20/05/2014 15:42:53] Florian Coulon: non, car entre 3 et 4 l'udid et le mot de passe peuvent être écouté
+[20/05/2014 15:43:26] Florian Coulon: Il faut que seule les appareil soundfi puisse communiquer enssembre
+[20/05/2014 15:43:31] François Le Brun: J'ai modif
+[20/05/2014 15:43:31] Florian Coulon: ensemble
+[20/05/2014 15:44:24] Florian Coulon: Il faut une méthode de chiffrement des communication sonore "hard-coded" pour les communication de paiement
+[20/05/2014 15:44:30] François Le Brun: A ce moment là seul la caisse et le téléphone on connaissance du mot de pass util
+[20/05/2014 15:44:46] François Le Brun: Cad ?
+[20/05/2014 15:45:29] Florian Coulon: et la personne qui écoute la communication avec un micro longue distance
+[20/05/2014 15:45:48] François Le Brun: Parce que je doute qu'on invente une nouvelle méthode de cryptage aussi performante que celle existante.
+[20/05/2014 15:45:56] Florian Coulon: ^^
+[20/05/2014 15:46:19] Florian Coulon: Je pense qu'il faut une clef privée codé en dur dans le code de l'application
+[20/05/2014 15:46:38] Florian Coulon: des application et appareil utilisant soundfi
+[20/05/2014 15:47:39] François Le Brun: Mais l'application d'une clef privé ne va pas rallonger la taille de smesage ?
+[20/05/2014 15:47:43] François Le Brun: des messages
+[20/05/2014 15:47:54] Florian Coulon: j'ai peut-être une idée
+[20/05/2014 15:48:25] Florian Coulon: il faut que lors de l'initialisation de l'application la clefs de chiffrement de l'application soit initialisée
+[20/05/2014 15:48:33] Florian Coulon: entre le serveur et l'application
+[20/05/2014 15:48:41] Florian Coulon: genre
+[20/05/2014 15:48:59] Florian Coulon: ...
+[20/05/2014 15:49:04] Florian Coulon: comment expliquer
+[20/05/2014 15:49:13] François Le Brun: Je comprends mais le principe de clé privée
+[20/05/2014 15:49:23] François Le Brun: C'est que les deux terminaux qui échange des message ont la meme clé
+[20/05/2014 15:49:23] Florian Coulon: plus de clef
+[20/05/2014 15:49:26] Florian Coulon: privé
+[20/05/2014 15:49:55] François Le Brun: Je crois que j'ai compris att
+[20/05/2014 15:49:56] Florian Coulon: faut que l'on se pose et que l'on définisse un protocole propre avec chiffrement
+[20/05/2014 15:50:59] Florian Coulon: mais que la méthode de chiffrement soit unique par application et non hard coded (evite le reverse ingenering) donc mathématique via une pass-key partagé lors de l'initialisation.
+[20/05/2014 15:51:34] Florian Coulon: plus un mot de passe par utilisateur.
+[20/05/2014 15:51:37] François Le Brun: L'idée c'est que à l'unit l'utilisateur reçoivent une clé unique
+[20/05/2014 15:51:43] Florian Coulon: c'est ça
+[20/05/2014 15:51:45] François Le Brun: Clé qui sera aussi stocké sur le serveur
+[20/05/2014 15:51:49] François Le Brun: Et associé à son UID
+[20/05/2014 15:51:52] Florian Coulon: exactement
+[20/05/2014 15:51:57] François Le Brun: Et lors du paiement
+[20/05/2014 15:52:02] Florian Coulon: plus derrière sont mot de passe
+[20/05/2014 15:52:27] François Le Brun: A partir de la,  la caisse n'a ni besoin de connaitre l'iid, ni le mdp
+[20/05/2014 15:52:29] François Le Brun: uid
+[20/05/2014 15:52:46] François Le Brun: Elle ne ferais que transiter un message incompréhensible déchiffrable uniquement par le terminal et le serveur
+[20/05/2014 15:52:47] Florian Coulon: il faut un mot de passe pour chiffré la clef stocké sur le tel
+[20/05/2014 15:52:57] François Le Brun: mot de pass util ?
+[20/05/2014 15:53:11] Florian Coulon: ou une méthode mathématique pour la chiffré sur le telephone
+[20/05/2014 15:53:24] Florian Coulon: et mot de passe utilisé pour evité les vol de téléphone
+[20/05/2014 15:53:43] François Le Brun: On pourrait se servir de l'identifiant du tel pour crypté la clé sur le tel ?
+[20/05/2014 15:53:47] François Le Brun: crypter
+[20/05/2014 15:53:52] Florian Coulon: aussi
+[20/05/2014 15:54:06] François Le Brun: Mais cet identifiant est facilement accessible ?
+[20/05/2014 15:54:15] François Le Brun: Genre si je veux l'if de ton tel, je m'y prend comment
+[20/05/2014 15:54:29] François Le Brun: Simple ligne de code, un coup d'oeil dans les params ?
+[20/05/2014 15:54:37] Florian Coulon: mais le mot de passe est impératifs pour que seul la personne ayant initialisée l'application puisse l'utiliser
+[20/05/2014 15:54:46] François Le Brun: Oui
+[20/05/2014 15:54:55] Florian Coulon: tu peux aller voir le données stockée sur le téléphone
+[20/05/2014 15:55:13] Florian Coulon: c'est comme ça que je fais pour me rajouter des crédit sur clash of clan
+[20/05/2014 15:55:18] Florian Coulon: sans payer
+[20/05/2014 15:55:44] François Le Brun: Alors déjà c'est mal ça, en tant que futur ingénieur en cyberdéfense je trouve pas ça très éthique xD
+[20/05/2014 15:55:53] Florian Coulon: ^^
+[20/05/2014 15:56:12] Florian Coulon: sinon, on peux voir avec l'ios keychain
+[20/05/2014 15:56:21] François Le Brun: Plus sérieusement je suis pas sur que l'id du tel c'est good.
+[20/05/2014 15:56:26] François Le Brun: C'est unique ?
+[20/05/2014 15:56:31] Florian Coulon: oui
+[20/05/2014 15:56:58] François Le Brun: Meme si je suis un vilain et que j'installe un OS jailbreak sur lequel je peux modifier un simple fichier
+[20/05/2014 15:57:15] François Le Brun: en fesant ios_keychain=cequeJeVeuxNan
+[20/05/2014 15:57:15] Florian Coulon: Non, il est lié à une valeur hardware
+[20/05/2014 15:57:39] Florian Coulon: stocké dans une mémoire de type rom
+[20/05/2014 15:58:05] Florian Coulon: en plus de ça, la puce est protégé contre les intrusion exterieur, et chiffré
+[20/05/2014 15:58:15] François Le Brun: Mais on peut pas lire alors si ?
+[20/05/2014 15:58:19] Florian Coulon: le même principe que les puce bancaire
+[20/05/2014 15:58:22] Florian Coulon: mais en pire
+[20/05/2014 15:58:23] François Le Brun: ou protégé simplement en écriture
+[20/05/2014 15:59:38] Florian Coulon: c'est pour ça que pour moi il faut un passe code venant de l'utilisateur à l'ouverture de l'application et un passe-code lors du paiement
+[20/05/2014 15:59:51] François Le Brun: Ah j'avais pas compris sa
+[20/05/2014 15:59:53] François Le Brun: 2 pass
+[20/05/2014 16:00:05] François Le Brun: 1 d'app, local à l'iphone
+[20/05/2014 16:00:06] Florian Coulon: genre un code de dévérouillage
+[20/05/2014 16:00:12] François Le Brun: et 1 qui sera sur le serv
+[20/05/2014 16:00:22] Florian Coulon: comme pour l'iphone quand on accède à la partie paiement
+[20/05/2014 16:00:32] Florian Coulon: et un qui sera stocké sur le serveur
+[20/05/2014 16:00:40] Florian Coulon: pour la validation
+[20/05/2014 16:01:18] Florian Coulon: comme ça une utilise juste une méthode mathématique et on stock le passe code d'ouverture de l'application en local avec du sha-2
+[20/05/2014 16:01:21] Florian Coulon: sha-1
+[20/05/2014 16:01:22] Florian Coulon: *
+[20/05/2014 16:01:52] François Le Brun: (non non sha-2 , on va sortir la nouvelle version)
+[20/05/2014 16:01:58] François Le Brun: Mmmm ok
+[20/05/2014 16:01:58] Florian Coulon: ok ok
+[20/05/2014 16:02:00] François Le Brun: xD
+[20/05/2014 16:02:07] Florian Coulon: je pense que là on est bon
+[20/05/2014 16:02:20] Florian Coulon: car à partir de là, on est plus responsable
+[20/05/2014 16:02:24] François Le Brun: Il faudra qu'on mettent sa au propre mais pas par skype.
+[20/05/2014 16:02:29] Florian Coulon: de ce que l'utilisateur fait de son password
+[20/05/2014 16:02:34] Florian Coulon: ^^
+[20/05/2014 16:02:59] François Le Brun: Techniquement, tout les transit de l'information sont chiffré là
+[20/05/2014 16:03:12] Florian Coulon: oui
+[20/05/2014 16:03:16] François Le Brun: A aucun moment on a du clair
+[20/05/2014 16:04:08] François Le Brun: Le seul point "plus faible "c'est au moment de l'envoie de la clé du serveur au client à l'init
+[20/05/2014 16:04:32] François Le Brun: et encore c'est crypté en SHA-1
+[20/05/2014 16:04:43] Florian Coulon: plus le https
+[20/05/2014 16:04:45] Florian Coulon: ^^
+[20/05/2014 16:05:04] Florian Coulon: c'est une norme du coup, on est pas non responsable

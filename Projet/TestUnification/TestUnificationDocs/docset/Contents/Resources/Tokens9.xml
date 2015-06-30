@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSData+LowLevelCommonCryptor.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSData(LowLevelCommonCryptor)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+CommonCrypto.h</DeclaredIn>
+            
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/dataEncryptedUsingAlgorithm:key:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+CommonCrypto.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)dataEncryptedUsingAlgorithm:(CCAlgorithm)algorithm key:(id)key error:(CCCryptorStatus *)error</Declaration>
+			
+			
+			<Anchor>//api/name/dataEncryptedUsingAlgorithm:key:error:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/dataEncryptedUsingAlgorithm:key:options:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+CommonCrypto.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)dataEncryptedUsingAlgorithm:(CCAlgorithm)algorithm key:(id)key options:(CCOptions)options error:(CCCryptorStatus *)error</Declaration>
+			
+			
+			<Anchor>//api/name/dataEncryptedUsingAlgorithm:key:options:error:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/dataEncryptedUsingAlgorithm:key:initializationVector:options:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+CommonCrypto.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)dataEncryptedUsingAlgorithm:(CCAlgorithm)algorithm key:(id)key initializationVector:(id)iv options:(CCOptions)options error:(CCCryptorStatus *)error</Declaration>
+			
+			
+			<Anchor>//api/name/dataEncryptedUsingAlgorithm:key:initializationVector:options:error:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/decryptedDataUsingAlgorithm:key:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+CommonCrypto.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)decryptedDataUsingAlgorithm:(CCAlgorithm)algorithm key:(id)key error:(CCCryptorStatus *)error</Declaration>
+			
+			
+			<Anchor>//api/name/decryptedDataUsingAlgorithm:key:error:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/decryptedDataUsingAlgorithm:key:options:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+CommonCrypto.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)decryptedDataUsingAlgorithm:(CCAlgorithm)algorithm key:(id)key options:(CCOptions)options error:(CCCryptorStatus *)error</Declaration>
+			
+			
+			<Anchor>//api/name/decryptedDataUsingAlgorithm:key:options:error:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/decryptedDataUsingAlgorithm:key:initializationVector:options:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+CommonCrypto.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)decryptedDataUsingAlgorithm:(CCAlgorithm)algorithm key:(id)key initializationVector:(id)iv options:(CCOptions)options error:(CCCryptorStatus *)error</Declaration>
+			
+			
+			<Anchor>//api/name/decryptedDataUsingAlgorithm:key:initializationVector:options:error:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/_runCryptor:result:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+CommonCrypto.m</DeclaredIn>
+			
+			<Declaration>- (NSData *)_runCryptor:(CCCryptorRef)cryptor result:(CCCryptorStatus *)status</Declaration>
+			
+			
+			<Anchor>//api/name/_runCryptor:result:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

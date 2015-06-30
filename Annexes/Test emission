@@ -1,0 +1,40 @@
+{ type : 1, image_uri : \"http://soudfi.com/images/67531686.jpg\", text : \"Bonjour, bienvenue sur SoundFi. Ceci est un message de test pour une taille standart en nombre de caracteres. L'objectif est que ce message passe sans erreurs et avec tous les caracteres.\" }
+
+{type : 2 key : \"MIIEogIBAAKCAQEAsCqR2zr/v8fGWvVp1T8R07hLV7S4ARi1+0d9uooMrriym3J3xSyEfIfW80NUNDzlRXMyciwWeB1fYYHmgMBJibJgl7MiAhXyhhVLG0ri2PSuG6lx1Bx5NTrR2x7mhEQTlxgNWI3W6Kr+S9O885ySsunVgU7uitsHUI79dH93b8pUZ0Xw1w32msfJ9yQ7NJ59jIAHMHoNG7gLQ20wqWIVHWBxND+qS04mwkr+Y//eAojPNjG0O2S+i1aiCtcy9d1Q+PW7mVzJcQGU6FeJ5Nh/xSimar3Y1rEd9ex4byemuIrZPKwaU/0/9giam7Ac9nOnLYw5Q24U5ocgbjvW2rbXqQIDAQABAoIBADk5GrfDql95XQ0euonyOrAzJQYQRdTVWgeNaWG2hfgbNqkXvZ/mngJ1fXT3Ydq2DSNKEBDWEVZi9CCQOXeI/loj/wxHu7xBtM2pDQSIhrdCg2uo1ri3pweLW695khdUpahmv68MI8rgAEpRNQdMzLohCqE+Km4gR3f7eojk/r7ox9kejNpshv1cZMFiBGVGSw3IX8T1OabBx7joHZcjHbMd54QqjWGs7Y5BEmPI6C9Xwn+LEq8z/wnBSnefz8Ts/hAeloKt8hw5LH4fR3lUDxdbC+q+cBAy+jnGd41hrvYczYnQfxt6cMVbz2lZq08b2SbQXq/ta4TV2GGqWcsBSSECgYEA4b507HZvBZmU6KiYU9+P1GpMrR5TK9XPbHJ73821as6suoTzm3pjT7NbKvGQX/pigcOOHgXWuY7nfLe+KgzI28mrVC8181hbc0I+vaKeTlpVrVbMTlugbXHqf4+U788UdMYFs58xRLO7+IPayteFgQA1heVt4WvlD7SWUmYLKDcCgYEAx8cLPsMFenVG3XxCJDz5TKHSmYBwNFiH9AVgQfSVOrtGAkbLUVa1vpWLF5j5TjcZGbK9iQB3PXwwj+h50uH/7iX/xAtWNR7EPB0Ob8yG3OiiQRC9jomm1eHMd26dPqir7zT3TExleQAm3Rm+j31pxMlEjE37QNMHTk1Jmb+sTx8CgYBrn87E0a4aoF8jEQYWrrY20jseKiAC/Ru4G1i9mahNdJ1bC3nM/WuNmvfzIFnxuEDwltgRrjzyGJR6nGtYRuIYDyzUpPF2xABNkh6xcG9C8cR5MLGVBhAVPcNL75tVPYgGKEadnV7y3zHVyJ8uJ9RpbT0XSgu59iOt+i3UuPvGvwKBgCXweQQ8SSgOaZzaYj07jySsfrBEIgru3TLMapFb/5MdyZfZFfemffFpuPaMSJw//nZQ6YnBGuQEV7ycq7YO0WnKsZ3rgT2pUB8SbZFxyBLf4yB0K2uMXLC1pvzvdtFVewF8j5Jf18145+iJYRUi/hkvF+OFU7fl27dVGismqXSFAoGAcN/0xAP7f9Nbm0NAf5e+Y+2I+Cf6xjRqmGO+DDC+Chha5yhq6Js/J3nXmEZYvbjQmiZbcQNeAiY5rv14xAavbXZ1VkC63mlR5giLPAk1SnieVy2RnjeQADXQbwiVfkqmZ2RZNYtOvBY/uBC56GQI+xNL1XyRThbNotlbasurQhI=\"}
+
+
+
+
+
+
+
+
+Test 512
+osamp 4
+Resultat /**/**/**/**/**/**/   :  1  iimaaggee__uuti :  "httttp:////ssoouddffi.ccoom/iimaggees//667755331166886.jjpgg",,  teexxt :  "BBoonnjjoouur, biienvenue  ssuur SSooundFi.  Ceecci eesst  uune  messsagge  dde  tesst  ppoouur  une  taiillle  sstaanddaarrt  en  nnoombbre  dde  ccaaraaccteres.  L''objeecctiif  esst  qque  cce  messsagge  paassse  saanns  errreuurrs  eet  aaveec  ttoouus  lees  ccaaraaccteres.""}}
+Test 512
+osamp 5
+Resultat /**/**/**/**/**/**/ e  : 1 image_utti  : ""h:///sod.c//667531686.j",   : "Boj, bienee s SnFi. Cei  est ne essage dee es poorr ne aillle sandar en nnombe dde caractere. L'objecif esst  que ce messsage passse sans  errreurrs e avec tos les  caracteres."}
+Test 512
+osamp 6
+Resultat /**/**/**/**/**/**/ e  :  1  iaagee_uuti : "htttp:////ssddffi.ccoom//iimaagee/6677553311668866..jpg",  teext :  "BBonnjjoour, biienvene  ssur SSoondFFi. CCeecci  ees  une  meessaage  dde  ee  ou  e  taiillle  staanddaar  een  noommbbe  dde  ccaaraaccterees. LL''objeecciif  eest que  cce  meesssagge  paassse sans  ereerrs  et  aaveec  touus  llees  ccaaraaccteeee."
+
+Sur les test ci dessus la distance d'émission à un lien très important.
+Trop près ou trop loin => pas bon
+
+
+Test 256
+osamp 4
+Resultat /**/**/**/**/**/**/   1 image_uui   "htt///sddfi.com/imagge/665531666.jpg", et  "Bojor, bienvene ssur SodFi. eeci esst une messsagge dde test ppor une taillle standart en nnoombre dde ccaraacteres. 'objeectif esst ue cce messsagge passse sans errreurrs et aeec touus les ccaraaceres."
+Test 256
+osamp 5
+Resultat /**/**/**/**/**/**/ e : 1 image_uuti : "htttp:///soudfi.com/images/667531686.jpg", text : "Boonjour, bienvenue ssur SoundFi. Ceci esst une messsage dde test ppour une taillle sstandarrt en nnombre dde caracteres. L'objectif esst que ce messsage passse sans errrers e aec tous les caracteres."
+Test 256
+osamp 6
+Resultat /**/**/**/**/**/**/ e : 1 imuti : "htttp:///soudfi.c/ge/667531686.g", e : "Bojour, bienene sr ondFi. Ceci esst une messsage dde tesst ppour une taillle sstandart en nnombre dde caracteres. L'objectif ess que ce messsage passse sans errreurrs et avec tous les caracteres."
+
+
+Après test, la configuration la plus optimal est OSAMP=4 et Taille buffer de 256 (128 Impossible), pour ce qui est de la vitesse.
+En revanche, OSAMP=4 et une taille de buffer de 512 affiche nettement moins de perte (mais plus de répétition à traiter).
+Encore une fois la distance de l'émetteur est très importante.
+

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/SoundFiEngineDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/SoundFiEngineDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+            
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SoundFiEngineDelegate/messageReceived:</TokenIdentifier>
+			<Abstract type="html">This method is called when you have received a new soundFi message</Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+			<Declaration>- (void)messageReceived:(NSString *)theMessage</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>theMessage</Name>
+					<Abstract type="html">A string containing the message you just received</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/messageReceived:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SoundFiEngineDelegate/startingReception</TokenIdentifier>
+			<Abstract type="html">This method is called when you start receiving a message, you can use it to update your UI as you want</Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+			<Declaration>- (void)startingReception</Declaration>
+			
+			
+			<Anchor>//api/name/startingReception</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SoundFiEngineDelegate/progressStatut:</TokenIdentifier>
+			<Abstract type="html">This method is called during the sending process it will give you the state of the sending by giving you a float from 0 to 1.</Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+			<Declaration>- (void)progressStatut:(float)percent</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>percent</Name>
+					<Abstract type="html">A float from 0 to 1 that giving you the state of emission (esay to use with progress bar ^^)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/progressStatut:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SoundFiEngineDelegate/finishEmission</TokenIdentifier>
+			<Abstract type="html">This method is called when you have finish to send a message</Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+			<Declaration>- (void)finishEmission</Declaration>
+			
+			
+			<Anchor>//api/name/finishEmission</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SoundFiEngineDelegate/soundToLow</TokenIdentifier>
+			<Abstract type="html">This method is called when the engine detect a volume to low for sending a message</Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+			<Declaration>- (void)soundToLow</Declaration>
+			
+			
+			<Anchor>//api/name/soundToLow</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SoundFiEngineDelegate/localisationData:::</TokenIdentifier>
+			<Abstract type="html">This method is called when the engine have detect the place of the user and have a promotion for him</Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+			<Declaration>- (void)localisationData:(NSString *)lieu :</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>lieu</Name>
+					<Abstract type="html">The place of the user (NSString)</Abstract>
+				</Parameter><Parameter>
+					<Name>promotion</Name>
+					<Abstract type="html">The promotion that the user can benefit (NSString)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/localisationData:::</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SoundFiEngineDelegate/transactionStatutChange:</TokenIdentifier>
+			<Abstract type="html">This method is called when a new step start in the paiement processing</Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+			<Declaration>- (void)transactionStatutChange:(int)statut</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>statut</Name>
+					<Abstract type="html">A int from 0 to 6 that give you the state of the paiement.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/transactionStatutChange:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SoundFiEngineDelegate/transactionData:</TokenIdentifier>
+			<Abstract type="html">This method is called when user have received the data of the paiement</Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+			<Declaration>- (void)transactionData:(NSString *)transactionData</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>transactionData</Name>
+					<Abstract type="html">A NSString that countain the price and the ID of the paiement</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/transactionData:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/SoundFiEngineDelegate/transactionFinalState:</TokenIdentifier>
+			<Abstract type="html">This method is called when user have received the final state of the paiemen (Is the paiement accepted or not ?).</Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+			<Declaration>- (void)transactionFinalState:(NSString *)transactionFinalState</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>transactionFinalState</Name>
+					<Abstract type="html">A string that indicate if the paimement have been accepted, currently there are two possible value {valid:&quot;0&quot;} or {valid:&quot;1&quot;}.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/transactionFinalState:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

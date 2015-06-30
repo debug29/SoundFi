@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AESCrypt.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AESCrypt</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AESCrypt.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AESCrypt/encrypt:password:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AESCrypt.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)encrypt:(NSString *)message password:(NSString *)password</Declaration>
+			
+			
+			<Anchor>//api/name/encrypt:password:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AESCrypt/decrypt:password:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AESCrypt.h</DeclaredIn>
+			
+			<Declaration>+ (NSString *)decrypt:(NSString *)base64EncodedString password:(NSString *)password</Declaration>
+			
+			
+			<Anchor>//api/name/decrypt:password:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

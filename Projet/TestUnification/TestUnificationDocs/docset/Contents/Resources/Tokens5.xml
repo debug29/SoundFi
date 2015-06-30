@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSData+Base64Additions.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSData(Base64Additions)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+Base64.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/base64DataFromString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+Base64.h</DeclaredIn>
+			
+			<Declaration>+ (NSData *)base64DataFromString:(NSString *)string</Declaration>
+			
+			
+			<Anchor>//api/name/base64DataFromString:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

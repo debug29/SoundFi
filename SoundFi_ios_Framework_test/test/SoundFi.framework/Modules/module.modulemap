@@ -1,0 +1,6 @@
+framework module SoundFi {
+  umbrella header "SoundFi.h"
+
+  export *
+  module * { export * }
+}

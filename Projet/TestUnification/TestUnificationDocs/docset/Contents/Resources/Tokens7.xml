@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSData+CommonDigest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSData(CommonDigest)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+CommonCrypto.h</DeclaredIn>
+            
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/MD2Sum</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+CommonCrypto.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)MD2Sum</Declaration>
+			
+			
+			<Anchor>//api/name/MD2Sum</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/MD4Sum</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+CommonCrypto.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)MD4Sum</Declaration>
+			
+			
+			<Anchor>//api/name/MD4Sum</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/MD5Sum</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+CommonCrypto.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)MD5Sum</Declaration>
+			
+			
+			<Anchor>//api/name/MD5Sum</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/SHA1Hash</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+CommonCrypto.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)SHA1Hash</Declaration>
+			
+			
+			<Anchor>//api/name/SHA1Hash</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/SHA224Hash</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+CommonCrypto.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)SHA224Hash</Declaration>
+			
+			
+			<Anchor>//api/name/SHA224Hash</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/SHA256Hash</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+CommonCrypto.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)SHA256Hash</Declaration>
+			
+			
+			<Anchor>//api/name/SHA256Hash</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/SHA384Hash</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+CommonCrypto.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)SHA384Hash</Declaration>
+			
+			
+			<Anchor>//api/name/SHA384Hash</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/SHA512Hash</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+CommonCrypto.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)SHA512Hash</Declaration>
+			
+			
+			<Anchor>//api/name/SHA512Hash</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

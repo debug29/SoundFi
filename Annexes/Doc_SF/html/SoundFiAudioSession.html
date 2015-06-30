@@ -1,0 +1,3656 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SoundFiAudioSession Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="./styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="./stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" >SoundFi</a></h1>
+				<a id="developerHome" >François Le Brun</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SoundFiAudioSession Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/activateSoundFiLocalisation">&nbsp;&nbsp;&nbsp;&nbsp;- activateSoundFiLocalisation</option>
+	
+	<option value="//api/name/activateSoundFiMessaging">&nbsp;&nbsp;&nbsp;&nbsp;- activateSoundFiMessaging</option>
+	
+	<option value="//api/name/activateSoundFiPaiement">&nbsp;&nbsp;&nbsp;&nbsp;- activateSoundFiPaiement</option>
+	
+	<option value="//api/name/alertView:clickedButtonAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- alertView:clickedButtonAtIndex:</option>
+	
+	<option value="//api/name/analysisPhase1">&nbsp;&nbsp;&nbsp;&nbsp;- analysisPhase1</option>
+	
+	<option value="//api/name/analysisPhase2">&nbsp;&nbsp;&nbsp;&nbsp;- analysisPhase2</option>
+	
+	<option value="//api/name/analysisPhase3">&nbsp;&nbsp;&nbsp;&nbsp;- analysisPhase3</option>
+	
+	<option value="//api/name/analysisPhase4">&nbsp;&nbsp;&nbsp;&nbsp;- analysisPhase4</option>
+	
+	<option value="//api/name/analysisPhase5">&nbsp;&nbsp;&nbsp;&nbsp;- analysisPhase5</option>
+	
+	<option value="//api/name/analysisPhase6">&nbsp;&nbsp;&nbsp;&nbsp;- analysisPhase6</option>
+	
+	<option value="//api/name/backgroundIsEnable">&nbsp;&nbsp;&nbsp;&nbsp;- backgroundIsEnable</option>
+	
+	<option value="//api/name/changeGeolockTimer:">&nbsp;&nbsp;&nbsp;&nbsp;- changeGeolockTimer:</option>
+	
+	<option value="//api/name/changeLocationManagerAccuracy">&nbsp;&nbsp;&nbsp;&nbsp;- changeLocationManagerAccuracy</option>
+	
+	<option value="//api/name/changeMinimumVolume:">&nbsp;&nbsp;&nbsp;&nbsp;- changeMinimumVolume:</option>
+	
+	<option value="//api/name/checkProcessTimeOut">&nbsp;&nbsp;&nbsp;&nbsp;- checkProcessTimeOut</option>
+	
+	<option value="//api/name/checkTimeOut">&nbsp;&nbsp;&nbsp;&nbsp;- checkTimeOut</option>
+	
+	<option value="//api/name/desableBackground">&nbsp;&nbsp;&nbsp;&nbsp;- desableBackground</option>
+	
+	<option value="//api/name/desactivateSoundFiLocalisation">&nbsp;&nbsp;&nbsp;&nbsp;- desactivateSoundFiLocalisation</option>
+	
+	<option value="//api/name/desactivateSoundFiMessaging">&nbsp;&nbsp;&nbsp;&nbsp;- desactivateSoundFiMessaging</option>
+	
+	<option value="//api/name/desactivateSoundFiPaiement">&nbsp;&nbsp;&nbsp;&nbsp;- desactivateSoundFiPaiement</option>
+	
+	<option value="//api/name/emissionSampleCalcul:::">&nbsp;&nbsp;&nbsp;&nbsp;- emissionSampleCalcul:::</option>
+	
+	<option value="//api/name/emissionSetup">&nbsp;&nbsp;&nbsp;&nbsp;- emissionSetup</option>
+	
+	<option value="//api/name/enableBackground">&nbsp;&nbsp;&nbsp;&nbsp;- enableBackground</option>
+	
+	<option value="//api/name/endPaiementProcess">&nbsp;&nbsp;&nbsp;&nbsp;- endPaiementProcess</option>
+	
+	<option value="//api/name/engineIsRunning">&nbsp;&nbsp;&nbsp;&nbsp;- engineIsRunning</option>
+	
+	<option value="//api/name/enteredBackground">&nbsp;&nbsp;&nbsp;&nbsp;- enteredBackground</option>
+	
+	<option value="//api/name/enteredForeground">&nbsp;&nbsp;&nbsp;&nbsp;- enteredForeground</option>
+	
+	<option value="//api/name/fftSetup">&nbsp;&nbsp;&nbsp;&nbsp;- fftSetup</option>
+	
+	<option value="//api/name/geolocalisationReceptionSampleTreatment">&nbsp;&nbsp;&nbsp;&nbsp;- geolocalisationReceptionSampleTreatment</option>
+	
+	<option value="//api/name/getASCIIFrequency">&nbsp;&nbsp;&nbsp;&nbsp;- getASCIIFrequency</option>
+	
+	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
+	
+	<option value="//api/name/initAudioSession">&nbsp;&nbsp;&nbsp;&nbsp;- initAudioSession</option>
+	
+	<option value="//api/name/initAudioStreams">&nbsp;&nbsp;&nbsp;&nbsp;- initAudioStreams</option>
+	
+	<option value="//api/name/initGeoloc">&nbsp;&nbsp;&nbsp;&nbsp;- initGeoloc</option>
+	
+	<option value="//api/name/initPaiement">&nbsp;&nbsp;&nbsp;&nbsp;- initPaiement</option>
+	
+	<option value="//api/name/interruptionDetected:">&nbsp;&nbsp;&nbsp;&nbsp;- interruptionDetected:</option>
+	
+	<option value="//api/name/localisationModeIsEnable">&nbsp;&nbsp;&nbsp;&nbsp;- localisationModeIsEnable</option>
+	
+	<option value="//api/name/locationManager:didUpdateToLocation:fromLocation:">&nbsp;&nbsp;&nbsp;&nbsp;- locationManager:didUpdateToLocation:fromLocation:</option>
+	
+	<option value="//api/name/messagingModeIsEnable">&nbsp;&nbsp;&nbsp;&nbsp;- messagingModeIsEnable</option>
+	
+	<option value="//api/name/messagingReceptionSampleTreatment">&nbsp;&nbsp;&nbsp;&nbsp;- messagingReceptionSampleTreatment</option>
+	
+	<option value="//api/name/paiementModeIsEnable">&nbsp;&nbsp;&nbsp;&nbsp;- paiementModeIsEnable</option>
+	
+	<option value="//api/name/paiementReceptionSampleTreatment">&nbsp;&nbsp;&nbsp;&nbsp;- paiementReceptionSampleTreatment</option>
+	
+	<option value="//api/name/relaunchReception">&nbsp;&nbsp;&nbsp;&nbsp;- relaunchReception</option>
+	
+	<option value="//api/name/sampleTreatment:">&nbsp;&nbsp;&nbsp;&nbsp;- sampleTreatment:</option>
+	
+	<option value="//api/name/setupCallback">&nbsp;&nbsp;&nbsp;&nbsp;- setupCallback</option>
+	
+	<option value="//api/name/startAnalysis">&nbsp;&nbsp;&nbsp;&nbsp;- startAnalysis</option>
+	
+	<option value="//api/name/startAudioUnit:::">&nbsp;&nbsp;&nbsp;&nbsp;- startAudioUnit:::</option>
+	
+	<option value="//api/name/startpaiementProcessing">&nbsp;&nbsp;&nbsp;&nbsp;- startpaiementProcessing</option>
+	
+	<option value="//api/name/stopProcessingAudio">&nbsp;&nbsp;&nbsp;&nbsp;- stopProcessingAudio</option>
+	
+	<option value="//api/name/switchBackgroundChanged:">&nbsp;&nbsp;&nbsp;&nbsp;- switchBackgroundChanged:</option>
+	
+	<option value="//api/name/transactionUpdate:">&nbsp;&nbsp;&nbsp;&nbsp;- transactionUpdate:</option>
+	
+	<option value="//api/name/volumeControl">&nbsp;&nbsp;&nbsp;&nbsp;- volumeControl</option>
+	
+	<option value="//api/name/zoneDetection:">&nbsp;&nbsp;&nbsp;&nbsp;- zoneDetection:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Start/Stop engine methods">Start/Stop engine methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Emission methods">Emission methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_TimeOut methods">TimeOut methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Deprecated methods">Deprecated methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Reception methods">Reception methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Engine informations methods">Engine informations methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Engine control methods">Engine control methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Paiement methods">Paiement methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Volume control methods">Volume control methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initialisation methods">Initialisation methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Geolocalisation methods">Geolocalisation methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Audio Session interruption detection methods">Audio Session interruption detection methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Analysis methods">Analysis methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Background and foreground management methods">Background and foreground management methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/activateSoundFiLocalisation">activateSoundFiLocalisation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/activateSoundFiMessaging">activateSoundFiMessaging</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/activateSoundFiPaiement">activateSoundFiPaiement</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/alertView:clickedButtonAtIndex:">alertView:clickedButtonAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/analysisPhase1">analysisPhase1</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/analysisPhase2">analysisPhase2</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/analysisPhase3">analysisPhase3</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/analysisPhase4">analysisPhase4</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/analysisPhase5">analysisPhase5</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/analysisPhase6">analysisPhase6</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/backgroundIsEnable">backgroundIsEnable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/changeGeolockTimer:">changeGeolockTimer:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/changeLocationManagerAccuracy">changeLocationManagerAccuracy</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/changeMinimumVolume:">changeMinimumVolume:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/checkProcessTimeOut">checkProcessTimeOut</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/checkTimeOut">checkTimeOut</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/desableBackground">desableBackground</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/desactivateSoundFiLocalisation">desactivateSoundFiLocalisation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/desactivateSoundFiMessaging">desactivateSoundFiMessaging</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/desactivateSoundFiPaiement">desactivateSoundFiPaiement</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/emissionSampleCalcul:::">emissionSampleCalcul:::</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/emissionSetup">emissionSetup</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enableBackground">enableBackground</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endPaiementProcess">endPaiementProcess</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/engineIsRunning">engineIsRunning</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enteredBackground">enteredBackground</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enteredForeground">enteredForeground</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fftSetup">fftSetup</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/geolocalisationReceptionSampleTreatment">geolocalisationReceptionSampleTreatment</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getASCIIFrequency">getASCIIFrequency</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initAudioSession">initAudioSession</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initAudioStreams">initAudioStreams</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initGeoloc">initGeoloc</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initPaiement">initPaiement</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/interruptionDetected:">interruptionDetected:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/localisationModeIsEnable">localisationModeIsEnable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/locationManager:didUpdateToLocation:fromLocation:">locationManager:didUpdateToLocation:fromLocation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/messagingModeIsEnable">messagingModeIsEnable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/messagingReceptionSampleTreatment">messagingReceptionSampleTreatment</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/paiementModeIsEnable">paiementModeIsEnable</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/paiementReceptionSampleTreatment">paiementReceptionSampleTreatment</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/relaunchReception">relaunchReception</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sampleTreatment:">sampleTreatment:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setupCallback">setupCallback</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startAnalysis">startAnalysis</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startAudioUnit:::">startAudioUnit:::</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startpaiementProcessing">startpaiementProcessing</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopProcessingAudio">stopProcessingAudio</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/switchBackgroundChanged:">switchBackgroundChanged:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/transactionUpdate:">transactionUpdate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/volumeControl">volumeControl</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/zoneDetection:">zoneDetection:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SoundFiAudioSession Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="./SoundFiEngineDelegate.html">Delegate</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SoundFiAudioSession Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">CLLocationManagerDelegate</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SoundFiAudioSession.h<br />SoundFiAudioSession.m</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>SoundFiAudioSession is the audio Engine of the SoundFi technologie. This class  include all the differrent mode that SoundFi provide : messaging, locating and paiement</p>
+
+<p>The SoundFiAudioSession mainly use Apple API provided for audio low level management. You will find in there some reference to AudioUnit and AndioGraph. If you'r not at ease with this part of Apple API please take a look as those link :</p>
+
+<ul>
+<li><a href="https://developer.apple.com/library/ios/documentation/MusicAudio/Conceptual/AudioUnitHostingGuide_iOS/ConstructingAudioUnitApps/ConstructingAudioUnitApps.html">Constructing Audio Unit App</a></li>
+<li><a href="https://developer.apple.com/library/ios/documentation/MusicAudio/Conceptual/AudioUnitHostingGuide_iOS/UsingSpecificAudioUnits/UsingSpecificAudioUnits.html#//apple_ref/doc/uid/TP40009492-CH17-SW1">Using Specific Audio Unit</a></li>
+</ul>
+
+
+<p>I&rsquo;ll try to synthetise how does the engine work. First of all, this engine work in real time, that&rsquo;s why, we get at each moment an audio sample that we will analyse immediatly (ideally before the next one ^^).
+How can we do that ??? With the callBack my dear ! Every time an audio unit will require a sample, they will call a function (a callback function). It&rsquo;s in this function that we will do our task, analysing.</p>
+
+<p>The analyse is done with FFT (Fast Fourrier Transform), that is able to transform a temporal sample to a frequency sample and détect the dominant frequency. In the code, you will see 2 FFT procesing :
+- A light one that use low CPU ressources and use for the background processing (low accuracy :/)
+- A bigger one that do good work in foreground and can give the frequency close to 1Hz in good condition. (<a href="http://www.dspdimension.com/">http://www.dspdimension.com/)</a>)</p>
+
+<p>This this is global principle. Now, invite you to start reading this doc :).</p>
+
+<p>For user : SoundFi use hight level abstraction to make your life simple, in this way, you will only need 2 or 3 methods to make the technologie working, we will see later witch one.</p>
+
+<p>For SoundFiDev : Welcom to low level, have fun, and hang on. This documenation give you information for the function purpose, if you want to know more about how they processing, you can find a lot of comment in the code that detail the working process.</p><div class="warning"><p><strong>Warning:</strong> This documentation is not ended yet. Documentation v1.00.</p>
+
+<p>All the class function are here, but some C function come upon this code, you could find there documentation directly in the code.</p></div>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Start/Stop engine methods" name="task_Start/Stop engine methods"></a>
+						<h3 class="subsubtitle task-title">Start/Stop engine methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startAudioUnit:::">&ndash;&nbsp;startAudioUnit:::</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopProcessingAudio">&ndash;&nbsp;stopProcessingAudio</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/relaunchReception">&ndash;&nbsp;relaunchReception</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Emission methods" name="task_Emission methods"></a>
+						<h3 class="subsubtitle task-title">Emission methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/emissionSampleCalcul:::">&ndash;&nbsp;emissionSampleCalcul:::</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getASCIIFrequency">&ndash;&nbsp;getASCIIFrequency</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="TimeOut methods" name="task_TimeOut methods"></a>
+						<h3 class="subsubtitle task-title">TimeOut methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/checkTimeOut">&ndash;&nbsp;checkTimeOut</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/checkProcessTimeOut">&ndash;&nbsp;checkProcessTimeOut</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Deprecated methods" name="task_Deprecated methods"></a>
+						<h3 class="subsubtitle task-title">Deprecated methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/switchBackgroundChanged:">&ndash;&nbsp;switchBackgroundChanged:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Reception methods" name="task_Reception methods"></a>
+						<h3 class="subsubtitle task-title">Reception methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sampleTreatment:">&ndash;&nbsp;sampleTreatment:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/geolocalisationReceptionSampleTreatment">&ndash;&nbsp;geolocalisationReceptionSampleTreatment</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/messagingReceptionSampleTreatment">&ndash;&nbsp;messagingReceptionSampleTreatment</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/paiementReceptionSampleTreatment">&ndash;&nbsp;paiementReceptionSampleTreatment</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Engine informations methods" name="task_Engine informations methods"></a>
+						<h3 class="subsubtitle task-title">Engine informations methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/localisationModeIsEnable">&ndash;&nbsp;localisationModeIsEnable</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/messagingModeIsEnable">&ndash;&nbsp;messagingModeIsEnable</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/paiementModeIsEnable">&ndash;&nbsp;paiementModeIsEnable</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/backgroundIsEnable">&ndash;&nbsp;backgroundIsEnable</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/engineIsRunning">&ndash;&nbsp;engineIsRunning</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Engine control methods" name="task_Engine control methods"></a>
+						<h3 class="subsubtitle task-title">Engine control methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enableBackground">&ndash;&nbsp;enableBackground</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/desableBackground">&ndash;&nbsp;desableBackground</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/activateSoundFiLocalisation">&ndash;&nbsp;activateSoundFiLocalisation</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/activateSoundFiMessaging">&ndash;&nbsp;activateSoundFiMessaging</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/activateSoundFiPaiement">&ndash;&nbsp;activateSoundFiPaiement</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/desactivateSoundFiLocalisation">&ndash;&nbsp;desactivateSoundFiLocalisation</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/desactivateSoundFiMessaging">&ndash;&nbsp;desactivateSoundFiMessaging</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/desactivateSoundFiPaiement">&ndash;&nbsp;desactivateSoundFiPaiement</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Paiement methods" name="task_Paiement methods"></a>
+						<h3 class="subsubtitle task-title">Paiement methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startpaiementProcessing">&ndash;&nbsp;startpaiementProcessing</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/transactionUpdate:">&ndash;&nbsp;transactionUpdate:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/alertView:clickedButtonAtIndex:">&ndash;&nbsp;alertView:clickedButtonAtIndex:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endPaiementProcess">&ndash;&nbsp;endPaiementProcess</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Volume control methods" name="task_Volume control methods"></a>
+						<h3 class="subsubtitle task-title">Volume control methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/changeMinimumVolume:">&ndash;&nbsp;changeMinimumVolume:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/volumeControl">&ndash;&nbsp;volumeControl</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Initialisation methods" name="task_Initialisation methods"></a>
+						<h3 class="subsubtitle task-title">Initialisation methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initPaiement">&ndash;&nbsp;initPaiement</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initGeoloc">&ndash;&nbsp;initGeoloc</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initAudioStreams">&ndash;&nbsp;initAudioStreams</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fftSetup">&ndash;&nbsp;fftSetup</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/emissionSetup">&ndash;&nbsp;emissionSetup</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setupCallback">&ndash;&nbsp;setupCallback</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initAudioSession">&ndash;&nbsp;initAudioSession</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Geolocalisation methods" name="task_Geolocalisation methods"></a>
+						<h3 class="subsubtitle task-title">Geolocalisation methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/zoneDetection:">&ndash;&nbsp;zoneDetection:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/locationManager:didUpdateToLocation:fromLocation:">&ndash;&nbsp;locationManager:didUpdateToLocation:fromLocation:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/changeLocationManagerAccuracy">&ndash;&nbsp;changeLocationManagerAccuracy</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/changeGeolockTimer:">&ndash;&nbsp;changeGeolockTimer:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Audio Session interruption detection methods" name="task_Audio Session interruption detection methods"></a>
+						<h3 class="subsubtitle task-title">Audio Session interruption detection methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/interruptionDetected:">&ndash;&nbsp;interruptionDetected:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Analysis methods" name="task_Analysis methods"></a>
+						<h3 class="subsubtitle task-title">Analysis methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/analysisPhase1">&ndash;&nbsp;analysisPhase1</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/analysisPhase2">&ndash;&nbsp;analysisPhase2</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/analysisPhase3">&ndash;&nbsp;analysisPhase3</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/analysisPhase4">&ndash;&nbsp;analysisPhase4</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/analysisPhase5">&ndash;&nbsp;analysisPhase5</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/analysisPhase6">&ndash;&nbsp;analysisPhase6</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startAnalysis">&ndash;&nbsp;startAnalysis</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Background and foreground management methods" name="task_Background and foreground management methods"></a>
+						<h3 class="subsubtitle task-title">Background and foreground management methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enteredBackground">&ndash;&nbsp;enteredBackground</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enteredForeground">&ndash;&nbsp;enteredForeground</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) id delegate</code></div>
+
+    
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/activateSoundFiLocalisation" title="activateSoundFiLocalisation"></a>
+	<h3 class="subsubtitle method-title">activateSoundFiLocalisation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Activate the location mode</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)activateSoundFiLocalisation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/desactivateSoundFiLocalisation">- desactivateSoundFiLocalisation</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/localisationModeIsEnable">- localisationModeIsEnable</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/activateSoundFiMessaging" title="activateSoundFiMessaging"></a>
+	<h3 class="subsubtitle method-title">activateSoundFiMessaging</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Activate the messaging mode</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)activateSoundFiMessaging</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/desactivateSoundFiMessaging">- desactivateSoundFiMessaging</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/messagingModeIsEnable">- messagingModeIsEnable</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/activateSoundFiPaiement" title="activateSoundFiPaiement"></a>
+	<h3 class="subsubtitle method-title">activateSoundFiPaiement</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Activate the paiement mode</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)activateSoundFiPaiement</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/desactivateSoundFiPaiement">- desactivateSoundFiPaiement</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/paiementModeIsEnable">- paiementModeIsEnable</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/alertView:clickedButtonAtIndex:" title="alertView:clickedButtonAtIndex:"></a>
+	<h3 class="subsubtitle method-title">alertView:clickedButtonAtIndex:</h3>
+	
+	
+
+	<div class="method-subsection method-declaration"><code>- (void)alertView:(UIAlertView *)<em>alertView</em> clickedButtonAtIndex:(NSInteger)<em>buttonIndex</em></code></div>
+
+    
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/analysisPhase1" title="analysisPhase1"></a>
+	<h3 class="subsubtitle method-title">analysisPhase1</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is the first step of the analysis</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)analysisPhase1</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The purpose of this method is to remove <a href="#//api/name/init">init</a> dans stop string that can be place in the message that is send. Actually you have to manually change it if you want. The default <a href="#//api/name/init">init</a> and stop string are :</p>
+
+<ul>
+<li>init:</li>
+<li>:stop</li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/startAnalysis">- startAnalysis</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/analysisPhase2" title="analysisPhase2"></a>
+	<h3 class="subsubtitle method-title">analysisPhase2</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Second step of the analysis phase</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)analysisPhase2</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The purpose of the phase is analysing the string and remove some pattern. We are looking for substring like &ldquo;aba&rdquo;, and considère that &ldquo;b&rdquo; is an error and should be a &ldquo;a&rdquo;, because each caracter are repeated 4 times. The difference in the ASCII table must be less than 1 to proced to the correction. (wont work with &ldquo;bkb&rdquo;)</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/startAnalysis">- startAnalysis</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/analysisPhase3" title="analysisPhase3"></a>
+	<h3 class="subsubtitle method-title">analysisPhase3</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Third step of the analysis phase</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)analysisPhase3</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The purpose of the phase is analysing the string and remove some pattern. We are looking for substring like &ldquo;bacb&rdquo;, and considère that &ldquo;ac&rdquo; is an error and should be &ldquo;bb&rdquo;, because each caracter are repeated 4 times. The difference in the ASCII table must be less than 1 to proced to the correction. (wont work with &ldquo;bjkb&rdquo;)</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/startAnalysis">- startAnalysis</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/analysisPhase4" title="analysisPhase4"></a>
+	<h3 class="subsubtitle method-title">analysisPhase4</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Fourth step of the analysis phase</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)analysisPhase4</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The purpose of the phase is analysing the string and remove some pattern. We are looking for substring like &ldquo;fgg&rdquo;, and considère that &ldquo;f&rdquo; is an error and should be &ldquo;g&rdquo;, because each caracter are repeated 4 times. The difference in the ASCII table must be less than 1 to proced to the correction. (wont work with &ldquo;bcc&rdquo;)</p>
+
+<p>This function is similar to <a href="#//api/name/analysisPhase2">analysisPhase2</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/startAnalysis">- startAnalysis</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/analysisPhase2">- analysisPhase2</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/analysisPhase5" title="analysisPhase5"></a>
+	<h3 class="subsubtitle method-title">analysisPhase5</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Fifth step of the analysis phase</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)analysisPhase5</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The purpose of the phase is analysing the string and deduct the good caracter. In the string, we consider that every caracter that is repeated 2 times is a valid caracter. And if it&rsquo;s repeated more than 5 times, it&rsquo;s a double letter.</p>
+
+<p>Following this logic if we have this cases :</p>
+
+<ul>
+<li>&ldquo;aa&rdquo; -> a</li>
+<li>&ldquo;abhgcc&rdquo; -> c</li>
+<li>&ldquo;aaaaaa&rdquo; -> aa</li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/startAnalysis">- startAnalysis</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/analysisPhase6" title="analysisPhase6"></a>
+	<h3 class="subsubtitle method-title">analysisPhase6</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sixth step of the analysis phase</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)analysisPhase6</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The purpose of the phase is analysing the string and correct the wrong word. This function proceed by analysing each word of the final text and check if it match with a word in the dictionnary.</p>
+
+<p>In this way, a word like &ldquo;Helo&rdquo; would be correct to &ldquo;Hello&rdquo;.</p>
+
+<p>Note : Be carefull, this phase could lead to error, for example, it don&rsquo;t work on url (don"t worry it&rsquo;s design to ignor URL). Morevover this phase is optional and can be disable by changing the #define SPELLCHECKER to 0.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/startAnalysis">- startAnalysis</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/backgroundIsEnable" title="backgroundIsEnable"></a>
+	<h3 class="subsubtitle method-title">backgroundIsEnable</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Check if the background is enable</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)backgroundIsEnable</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if the background is enable</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/enableBackground">- enableBackground</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/changeGeolockTimer:" title="changeGeolockTimer:"></a>
+	<h3 class="subsubtitle method-title">changeGeolockTimer:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Permit to change the interval of the timer for user localisation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)changeGeolockTimer:(int)<em>duree</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>duree</em></dt>
+			<dd><p>The new value representing the time between to fire of the timer</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Currently can be called by everyone but may become a private method</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/changeLocationManagerAccuracy" title="changeLocationManagerAccuracy"></a>
+	<h3 class="subsubtitle method-title">changeLocationManagerAccuracy</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Increse the accuracy of the GPS for 1 location.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)changeLocationManagerAccuracy</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Call by the timer all the n seconds to get a precise location of the user.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/changeMinimumVolume:" title="changeMinimumVolume:"></a>
+	<h3 class="subsubtitle method-title">changeMinimumVolume:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Allow you to set the minimum required volume for sending message</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)changeMinimumVolume:(float)<em>newMinVolume</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newMinVolume</em></dt>
+			<dd><p>The new minimum volume you want to set</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The value must be between 0 and 1. It&rsquo;s higtly recommended to use a value between 0.6 and 0.9.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/volumeControl">- volumeControl</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/checkProcessTimeOut" title="checkProcessTimeOut"></a>
+	<h3 class="subsubtitle method-title">checkProcessTimeOut</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Check if there is TimeOut during one step of the paiement process.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)checkProcessTimeOut</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/checkTimeOut">- checkTimeOut</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/checkTimeOut" title="checkTimeOut"></a>
+	<h3 class="subsubtitle method-title">checkTimeOut</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Check if the comunication time out, use by all soundFi mode.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)checkTimeOut</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/checkProcessTimeOut">- checkProcessTimeOut</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/desableBackground" title="desableBackground"></a>
+	<h3 class="subsubtitle method-title">desableBackground</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Avoir background processing</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)desableBackground</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/enableBackground">- enableBackground</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/backgroundIsEnable">- backgroundIsEnable</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/desactivateSoundFiLocalisation" title="desactivateSoundFiLocalisation"></a>
+	<h3 class="subsubtitle method-title">desactivateSoundFiLocalisation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Desactivate the location mode</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)desactivateSoundFiLocalisation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/activateSoundFiLocalisation">- activateSoundFiLocalisation</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/desactivateSoundFiMessaging" title="desactivateSoundFiMessaging"></a>
+	<h3 class="subsubtitle method-title">desactivateSoundFiMessaging</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Desactivate messaging mode</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)desactivateSoundFiMessaging</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/desactivateSoundFiMessaging">- desactivateSoundFiMessaging</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/messagingModeIsEnable">- messagingModeIsEnable</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/desactivateSoundFiPaiement" title="desactivateSoundFiPaiement"></a>
+	<h3 class="subsubtitle method-title">desactivateSoundFiPaiement</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Desactivate the paiement mode</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)desactivateSoundFiPaiement</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/activateSoundFiPaiement">- activateSoundFiPaiement</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/paiementModeIsEnable">- paiementModeIsEnable</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/emissionSampleCalcul:::" title="emissionSampleCalcul:::"></a>
+	<h3 class="subsubtitle method-title">emissionSampleCalcul:::</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create the audio wave with the required frequency for a given sample.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)emissionSampleCalcul:(int)<em>frequence</em> :</code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>frequence</em></dt>
+			<dd><p>This is the desired frequency for this sample (int).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>numFrames</em></dt>
+			<dd><p>The number of frame that required the audio hardware (int).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>buffer</em></dt>
+			<dd><p>The audio sample, store as a Float32 array.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This function will generate an audio sinusoidal wave for each audio sample needed. This function is called in the renderCallBack.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/emissionSetup" title="emissionSetup"></a>
+	<h3 class="subsubtitle method-title">emissionSetup</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Like an emissionInit, this function setup the audioUnit for emission</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)emissionSetup</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method perform the initialisation in 4 steps :</p>
+
+<ul>
+<li>Create the component description</li>
+<li>Find the output component</li>
+<li>Create the ASBD (Audio Stream Basic Description)</li>
+<li>Assign the component to the AudioUnit</li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/init">- init</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enableBackground" title="enableBackground"></a>
+	<h3 class="subsubtitle method-title">enableBackground</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Allow background processing</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)enableBackground</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/desableBackground">- desableBackground</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/backgroundIsEnable">- backgroundIsEnable</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endPaiementProcess" title="endPaiementProcess"></a>
+	<h3 class="subsubtitle method-title">endPaiementProcess</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Call at end of paiement</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)endPaiementProcess</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method permit to stop processing a paiement, it disable the paiement mode and enable the other mode. Do stuff like reset the timer for geolock etc &hellip;</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/startpaiementProcessing">- startpaiementProcessing</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/engineIsRunning" title="engineIsRunning"></a>
+	<h3 class="subsubtitle method-title">engineIsRunning</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Check if the engine is running</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)engineIsRunning</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if the engine is running</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enteredBackground" title="enteredBackground"></a>
+	<h3 class="subsubtitle method-title">enteredBackground</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Call to perform background task</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)enteredBackground</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This function is called when the aplication is entering background. It does geolocalisation processing to determine if we have or not to stop the audioEngine in background</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/enteredForeground">- enteredForeground</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enteredForeground" title="enteredForeground"></a>
+	<h3 class="subsubtitle method-title">enteredForeground</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Call to perform background task</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)enteredForeground</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This function is called when the aplication is entering foreground. It does geolocalisation processing to determine if we have or not to relaunch the audioSession when starting foreground processing.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/enteredBackground">- enteredBackground</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fftSetup" title="fftSetup"></a>
+	<h3 class="subsubtitle method-title">fftSetup</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set up variable and array for the fft.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)fftSetup</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method simply <a href="#//api/name/init">init</a> a lot of stuff to allow FFT process later.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/init">- init</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/geolocalisationReceptionSampleTreatment" title="geolocalisationReceptionSampleTreatment"></a>
+	<h3 class="subsubtitle method-title">geolocalisationReceptionSampleTreatment</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Treatment of geolocalisation frequency.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)geolocalisationReceptionSampleTreatment</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getASCIIFrequency" title="getASCIIFrequency"></a>
+	<h3 class="subsubtitle method-title">getASCIIFrequency</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Coordinate the state of the emission and asign a frequency to a caracter.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (int)getASCIIFrequency</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return the frequency associate with the caracter or the init/stop frequency</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This function make the link between the audio and the string to send. For each audioSample needed, this function will tell what frequency we need.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="subsubtitle method-title">init</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is the SoundFiAudioSession init method, this method init every mode (messaging,paiemement and localisation).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (SoundFiAudioSession *)init</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return an instance of SoundFiAudioSession.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This function init all the variables of the engine. By default, the messaging and localisation mode are enable, the engine is configure to allow background tasking by default (that can be change later by the user). This fonction will call every sub init methods.</p>
+
+<ul>
+<li><a href="#//api/name/initGeoloc">initGeoloc</a></li>
+<li><a href="#//api/name/initAudioSession">initAudioSession</a></li>
+<li><a href="#//api/name/setupCallback">setupCallback</a></li>
+<li><a href="#//api/name/fftSetup">fftSetup</a></li>
+<li><a href="#//api/name/initAudioStreams">initAudioStreams</a></li>
+</ul>
+
+
+<p>Note that every sub function (<a href="#//api/name/initGeoloc">initGeoloc</a>,<a href="#//api/name/initAudioSession">initAudioSession</a> &hellip;), would be in the init method, but to simplify the code they have been spitted.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/initGeoloc">- initGeoloc</a></p>
+
+<p><a href="#//api/name/initAudioSession">- initAudioSession</a></p>
+
+<p><a href="#//api/name/setupCallback">- setupCallback</a></p>
+
+<p><a href="#//api/name/fftSetup">- fftSetup</a></p>
+
+<p><a href="#//api/name/initAudioStreams">- initAudioStreams</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initAudioSession" title="initAudioSession"></a>
+	<h3 class="subsubtitle method-title">initAudioSession</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Init AudioSession&rsquo;s parameters</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (int)initAudioSession</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This function set the type of audioSession to Play&amp;Record, and <a href="#//api/name/init">init</a> some parameters like : rate, duration, interruptionListener.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/init">- init</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initAudioStreams" title="initAudioStreams"></a>
+	<h3 class="subsubtitle method-title">initAudioStreams</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method deal with the initilisation of the audioStream, mainly the AudioGraph</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (int)initAudioStreams</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>1 un case of error, else 0</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method represent mainly the initialisation of the reception.
+It set all the parameters of stream including IO and mixer and the graph. This function proceed in 6 step :</p>
+
+<ul>
+<li>Define the ASBD (Audio Stream Basic Description)</li>
+<li>Define the component description (IO and Mixer)</li>
+<li>Create graph&rsquo;s node</li>
+<li>Associate AudioUnit with node</li>
+<li>Configure AudioUnit (including callback setup)</li>
+<li>Initialize graph</li>
+</ul>
+
+
+<p>NOTE : The mixer is not really use here but implement for futur feature.</p><div class="warning"><p><strong>Warning:</strong> Here some error that can be raised by the function</p>
+
+<ul>
+<li>NewAUGraph error</li>
+<li>AUGraphAddNode error</li>
+<li>AUGraphOpen error</li>
+<li>AUGraphNodeInfo error</li>
+<li>AUGraphSetNodeInputCallback error</li>
+<li>AUGraphInitialize error</li>
+</ul>
+</div>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/init">- init</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initGeoloc" title="initGeoloc"></a>
+	<h3 class="subsubtitle method-title">initGeoloc</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method deal with the initilisation of the audioEngine&rsquo;s localisation</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)initGeoloc</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Init geolocalisation variable like the LocationManager and configure the NSTimer for a periodic update of the user location. By Default, the
+user considered out of a soundFi covered spot.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/init">- init</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initPaiement" title="initPaiement"></a>
+	<h3 class="subsubtitle method-title">initPaiement</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method deal with the initilisation of the paiement variables</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)initPaiement</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/init">- init</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/interruptionDetected:" title="interruptionDetected:"></a>
+	<h3 class="subsubtitle method-title">interruptionDetected:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Detect the interruption flag of the audioSession.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)interruptionDetected:(NSNotification *)<em>notification</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>notification</em></dt>
+			<dd><p>The NSNotification that was raised by the interruption</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This function handle any NSNotifiaction corresponding to an interruption (corresponding to a AVAudioSessionInterruptionNotification). And have the value AVAudioSessionInterruptionTypeKey.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/localisationModeIsEnable" title="localisationModeIsEnable"></a>
+	<h3 class="subsubtitle method-title">localisationModeIsEnable</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Check if the localisation mode is enable</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)localisationModeIsEnable</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if the localisation mode is enable</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/activateSoundFiLocalisation">- activateSoundFiLocalisation</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/desactivateSoundFiLocalisation">- desactivateSoundFiLocalisation</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/locationManager:didUpdateToLocation:fromLocation:" title="locationManager:didUpdateToLocation:fromLocation:"></a>
+	<h3 class="subsubtitle method-title">locationManager:didUpdateToLocation:fromLocation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Delegate method for LocationManager to update user location.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)locationManager:(CLLocationManager *)<em>manager</em> didUpdateToLocation:(CLLocation *)<em>newLocation</em> fromLocation:(CLLocation *)<em>oldLocation</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>For more detail, take a look at <a href="https://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManagerDelegate_Protocol/CLLocationManagerDelegate/CLLocationManagerDelegate.html#//apple_ref/occ/intfm/CLLocationManagerDelegate/locationManager:didUpdateLocations:">locationManaerUpdate</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/messagingModeIsEnable" title="messagingModeIsEnable"></a>
+	<h3 class="subsubtitle method-title">messagingModeIsEnable</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Check if the messaging mode is enable</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)messagingModeIsEnable</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if the messaging mode is enable</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/activateSoundFiMessaging">- activateSoundFiMessaging</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/desactivateSoundFiMessaging">- desactivateSoundFiMessaging</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/messagingReceptionSampleTreatment" title="messagingReceptionSampleTreatment"></a>
+	<h3 class="subsubtitle method-title">messagingReceptionSampleTreatment</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Treatment of simple messenging frequency</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)messagingReceptionSampleTreatment</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/paiementModeIsEnable" title="paiementModeIsEnable"></a>
+	<h3 class="subsubtitle method-title">paiementModeIsEnable</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Check if the paiement mode is enable</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)paiementModeIsEnable</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if the paiement mode is enable</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/activateSoundFiPaiement">- activateSoundFiPaiement</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/desactivateSoundFiPaiement">- desactivateSoundFiPaiement</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/paiementReceptionSampleTreatment" title="paiementReceptionSampleTreatment"></a>
+	<h3 class="subsubtitle method-title">paiementReceptionSampleTreatment</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Treatment if paiement frequency (very similar to messaging frequency)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)paiementReceptionSampleTreatment</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/relaunchReception" title="relaunchReception"></a>
+	<h3 class="subsubtitle method-title">relaunchReception</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This function is use after finishing a message sending</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)relaunchReception</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Permit to restart the listening and put in waiting state for a message. It will proceed to a usleep to avoid lldb due to audio still processing on sending.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sampleTreatment:" title="sampleTreatment:"></a>
+	<h3 class="subsubtitle method-title">sampleTreatment:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This function deal with the recepetion state, for background and foreground.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sampleTreatment:(int)<em>numFrames</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>numFrames</em></dt>
+			<dd><p>The number of frame (int) that the FFT must perform.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>It perform the FFT method according to the UIApplication state. It will call three other function <a href="#//api/name/geolocalisationReceptionSampleTreatment">geolocalisationReceptionSampleTreatment</a>, <a href="#//api/name/messagingReceptionSampleTreatment">messagingReceptionSampleTreatment</a> and <a href="#//api/name/paiementReceptionSampleTreatment">paiementReceptionSampleTreatment</a>.</p>
+
+<p>NOTE: The FFT for background is less accurate than the other but use only 2%CPU</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/geolocalisationReceptionSampleTreatment">- geolocalisationReceptionSampleTreatment</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/messagingReceptionSampleTreatment">- messagingReceptionSampleTreatment</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/paiementReceptionSampleTreatment">- paiementReceptionSampleTreatment</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setupCallback" title="setupCallback"></a>
+	<h3 class="subsubtitle method-title">setupCallback</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This function <a href="#//api/name/init">init</a> some variables use in the callback methods</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setupCallback</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/init">- init</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startAnalysis" title="startAnalysis"></a>
+	<h3 class="subsubtitle method-title">startAnalysis</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Analysis of the message receive during the transaction</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)startAnalysis</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This function is the one you have to use if you want to analyse a string send by soundFi. It will manage all the step from 1 to 6</p>
+
+<pre><code>[self analysisPhase1];
+[self analysisPhase2];
+[self analysisPhase3];
+[self analysisPhase4];
+[self analysisPhase5];
+
+#if SPELLCHECKER
+[self analysisPhase6];
+#endif
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/analysisPhase1">- analysisPhase1</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/analysisPhase2">- analysisPhase2</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/analysisPhase3">- analysisPhase3</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/analysisPhase4">- analysisPhase4</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/analysisPhase5">- analysisPhase5</a></p></code></li>
+			
+			<li><code><p><a href="#//api/name/analysisPhase6">- analysisPhase6</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startAudioUnit:::" title="startAudioUnit:::"></a>
+	<h3 class="subsubtitle method-title">startAudioUnit:::</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Allow you to start SoundFi engine for receiving or sending function.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (int)startAudioUnit:(SFMessagingMode)<em>mode</em> :</code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>mode</em></dt>
+			<dd><p>The mode that you want to use, SFReceivingMode or SFSendingMode</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>message</em></dt>
+			<dd><p>The string to send (only if you use SFSendingMode, otherwise put nil)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return 1 if every thing is ok, or 0 in the other case.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This function start the audio unit for send of receiving, and proceed to a sound check in case of sendingMode is use.</p><div class="warning"><p><strong>Warning:</strong> Here some error that can be raised by the function</p>
+
+<ul>
+<li>AUGraphStart error</li>
+</ul>
+</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startpaiementProcessing" title="startpaiementProcessing"></a>
+	<h3 class="subsubtitle method-title">startpaiementProcessing</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Call at start of paiement</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)startpaiementProcessing</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method permit to start processing a paiement, it enable the paiement mode and disable the other mode. To resume, it prepare the battlefield.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/endPaiementProcess">- endPaiementProcess</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopProcessingAudio" title="stopProcessingAudio"></a>
+	<h3 class="subsubtitle method-title">stopProcessingAudio</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This function allow you to stop listenning or sending audio</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (int)stopProcessingAudio</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Return 1 if every thing is ok</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> Here some error that can be raised by the function</p>
+
+<ul>
+<li>AUGraphStop error</li>
+</ul>
+</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/switchBackgroundChanged:" title="switchBackgroundChanged:"></a>
+	<h3 class="subsubtitle method-title">switchBackgroundChanged:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Fonction Call to enable or disable background listenning. (<b class="deprecated">Deprecated:</b><span class="deprecated"> Replace with : enableBackGround and disableBackground.</span>)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)switchBackgroundChanged:(id)<em>sender</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/enableBackground">- enableBackground</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/transactionUpdate:" title="transactionUpdate:"></a>
+	<h3 class="subsubtitle method-title">transactionUpdate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Call to perform background task</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)transactionUpdate:(NSString *)<em>theMessage</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>theMessage</em></dt>
+			<dd><p>The last message received by the cash register.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Control state of the transaction and send message according to the state. This is the main paiement engine&rsquo;s method.</p><div class="warning"><p><strong>Warning:</strong> Although this method work, they could be some bug. Moreover, send a classic message during processing could pertubate the transaction.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/volumeControl" title="volumeControl"></a>
+	<h3 class="subsubtitle method-title">volumeControl</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Control the app volume for sending message</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)volumeControl</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>TRUE if volume is superior to the minimal require</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Limit can be configured with the <a href="#//api/name/changeMinimumVolume:">changeMinimumVolume:</a>(float) method.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/zoneDetection:" title="zoneDetection:"></a>
+	<h3 class="subsubtitle method-title">zoneDetection:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Use to deal with the location of the user in function of the received frequency.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)zoneDetection:(int *)<em>data</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>data</em></dt>
+			<dd><p>The array of frequency (int* 100)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Made he average frequency of the last 100 frequency record, and then check the standart deviation to determine if the samples are concluding</p>
+
+<p>NOTE:May use GPS localisation in futur implementation.</p>
+	</div>
+	
+	
+	
+	<div class="method-subsection arguments-section exceptions">
+		<h4 class="method-subtitle exception-title">Exceptions</h4>
+		
+		<dl class="argument-def exception-def">
+			<dt><em>outRange</em></dt>
+			<dd><p>Can raise an NSExeption if the location is out range of the location&rsquo;s array</p></dd>
+		</dl>
+		
+		<dl class="argument-def exception-def">
+			<dt><em>outZone</em></dt>
+			<dd><p>Raise if the user is not in a zone under soundFi technologie</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/geolocalisationReceptionSampleTreatment">- geolocalisationReceptionSampleTreatment</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SoundFiAudioSession.m</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="./SoundFiEngineDelegate.html">Delegate</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 François Le Brun. All rights reserved. (Last updated: 2014-06-27)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

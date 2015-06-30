@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FAB190B1918C576003C0FDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FAB190A1918C576003C0FDC /* Foundation.framework */; };
+		0FAB190D1918C576003C0FDC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FAB190C1918C576003C0FDC /* CoreGraphics.framework */; };
+		0FAB190F1918C576003C0FDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FAB190E1918C576003C0FDC /* UIKit.framework */; };
+		0FAB19151918C576003C0FDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FAB19131918C576003C0FDC /* InfoPlist.strings */; };
+		0FAB19171918C576003C0FDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FAB19161918C576003C0FDC /* main.m */; };
+		0FAB191B1918C576003C0FDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FAB191A1918C576003C0FDC /* AppDelegate.m */; };
+		0FAB19231918C577003C0FDC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FAB19221918C577003C0FDC /* Images.xcassets */; };
+		0FAB192A1918C577003C0FDC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FAB19291918C577003C0FDC /* XCTest.framework */; };
+		0FAB192B1918C577003C0FDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FAB190A1918C576003C0FDC /* Foundation.framework */; };
+		0FAB192C1918C577003C0FDC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FAB190E1918C576003C0FDC /* UIKit.framework */; };
+		0FAB19341918C577003C0FDC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FAB19321918C577003C0FDC /* InfoPlist.strings */; };
+		0FAB19361918C577003C0FDC /* SecureSoundFiTransactionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FAB19351918C577003C0FDC /* SecureSoundFiTransactionTests.m */; };
+		0FAB19421918C5DC003C0FDC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FAB19401918C5DC003C0FDC /* ViewController.m */; };
+		0FAB19431918C5DC003C0FDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FAB19411918C5DC003C0FDC /* Main.storyboard */; };
+		0FAB19471918C61A003C0FDC /* SoundFiASSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FAB19451918C61A003C0FDC /* SoundFiASSession.m */; };
+		0FAB19481918C61A003C0FDC /* smbPitchShift.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FAB19461918C61A003C0FDC /* smbPitchShift.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FAB192D1918C577003C0FDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FAB18FF1918C576003C0FDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FAB19061918C576003C0FDC;
+			remoteInfo = SecureSoundFiTransaction;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FAB19071918C576003C0FDC /* SecureSoundFiTransactionEmettor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureSoundFiTransactionEmettor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FAB190A1918C576003C0FDC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0FAB190C1918C576003C0FDC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0FAB190E1918C576003C0FDC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0FAB19121918C576003C0FDC /* SecureSoundFiTransactionEmettor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SecureSoundFiTransactionEmettor-Info.plist"; sourceTree = "<group>"; };
+		0FAB19141918C576003C0FDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0FAB19161918C576003C0FDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0FAB19181918C576003C0FDC /* SecureSoundFiTransactionEmettor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SecureSoundFiTransactionEmettor-Prefix.pch"; sourceTree = "<group>"; };
+		0FAB19191918C576003C0FDC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0FAB191A1918C576003C0FDC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0FAB19221918C577003C0FDC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0FAB19281918C577003C0FDC /* SecureSoundFiTransactionEmettorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecureSoundFiTransactionEmettorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FAB19291918C577003C0FDC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0FAB19311918C577003C0FDC /* SecureSoundFiTransactionEmettorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SecureSoundFiTransactionEmettorTests-Info.plist"; sourceTree = "<group>"; };
+		0FAB19331918C577003C0FDC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0FAB19351918C577003C0FDC /* SecureSoundFiTransactionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecureSoundFiTransactionTests.m; sourceTree = "<group>"; };
+		0FAB193F1918C5DC003C0FDC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0FAB19401918C5DC003C0FDC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0FAB19411918C5DC003C0FDC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0FAB19441918C61A003C0FDC /* SoundFiASSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundFiASSession.h; sourceTree = "<group>"; };
+		0FAB19451918C61A003C0FDC /* SoundFiASSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundFiASSession.m; sourceTree = "<group>"; };
+		0FAB19461918C61A003C0FDC /* smbPitchShift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = smbPitchShift.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FAB19041918C576003C0FDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FAB190D1918C576003C0FDC /* CoreGraphics.framework in Frameworks */,
+				0FAB190F1918C576003C0FDC /* UIKit.framework in Frameworks */,
+				0FAB190B1918C576003C0FDC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FAB19251918C577003C0FDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FAB192A1918C577003C0FDC /* XCTest.framework in Frameworks */,
+				0FAB192C1918C577003C0FDC /* UIKit.framework in Frameworks */,
+				0FAB192B1918C577003C0FDC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FAB18FE1918C576003C0FDC = {
+			isa = PBXGroup;
+			children = (
+				0FAB19101918C576003C0FDC /* SecureSoundFiTransactionReceiver */,
+				0FAB192F1918C577003C0FDC /* SecureSoundFiTransactionTests */,
+				0FAB19091918C576003C0FDC /* Frameworks */,
+				0FAB19081918C576003C0FDC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0FAB19081918C576003C0FDC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FAB19071918C576003C0FDC /* SecureSoundFiTransactionEmettor.app */,
+				0FAB19281918C577003C0FDC /* SecureSoundFiTransactionEmettorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FAB19091918C576003C0FDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FAB190A1918C576003C0FDC /* Foundation.framework */,
+				0FAB190C1918C576003C0FDC /* CoreGraphics.framework */,
+				0FAB190E1918C576003C0FDC /* UIKit.framework */,
+				0FAB19291918C577003C0FDC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0FAB19101918C576003C0FDC /* SecureSoundFiTransactionReceiver */ = {
+			isa = PBXGroup;
+			children = (
+				0FAB19191918C576003C0FDC /* AppDelegate.h */,
+				0FAB191A1918C576003C0FDC /* AppDelegate.m */,
+				0FAB19491918C621003C0FDC /* AudioStuff */,
+				0FAB194A1918C638003C0FDC /* ViewController */,
+				0FAB19221918C577003C0FDC /* Images.xcassets */,
+				0FAB19111918C576003C0FDC /* Supporting Files */,
+			);
+			name = SecureSoundFiTransactionReceiver;
+			path = SecureSoundFiTransaction;
+			sourceTree = "<group>";
+		};
+		0FAB19111918C576003C0FDC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FAB19121918C576003C0FDC /* SecureSoundFiTransactionEmettor-Info.plist */,
+				0FAB19131918C576003C0FDC /* InfoPlist.strings */,
+				0FAB19161918C576003C0FDC /* main.m */,
+				0FAB19181918C576003C0FDC /* SecureSoundFiTransactionEmettor-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0FAB192F1918C577003C0FDC /* SecureSoundFiTransactionTests */ = {
+			isa = PBXGroup;
+			children = (
+				0FAB19351918C577003C0FDC /* SecureSoundFiTransactionTests.m */,
+				0FAB19301918C577003C0FDC /* Supporting Files */,
+			);
+			path = SecureSoundFiTransactionTests;
+			sourceTree = "<group>";
+		};
+		0FAB19301918C577003C0FDC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FAB19311918C577003C0FDC /* SecureSoundFiTransactionEmettorTests-Info.plist */,
+				0FAB19321918C577003C0FDC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0FAB19491918C621003C0FDC /* AudioStuff */ = {
+			isa = PBXGroup;
+			children = (
+				0FAB19441918C61A003C0FDC /* SoundFiASSession.h */,
+				0FAB19451918C61A003C0FDC /* SoundFiASSession.m */,
+				0FAB19461918C61A003C0FDC /* smbPitchShift.m */,
+			);
+			name = AudioStuff;
+			sourceTree = "<group>";
+		};
+		0FAB194A1918C638003C0FDC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0FAB193F1918C5DC003C0FDC /* ViewController.h */,
+				0FAB19401918C5DC003C0FDC /* ViewController.m */,
+				0FAB19411918C5DC003C0FDC /* Main.storyboard */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FAB19061918C576003C0FDC /* SecureSoundFiTransactionEmettor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FAB19391918C577003C0FDC /* Build configuration list for PBXNativeTarget "SecureSoundFiTransactionEmettor" */;
+			buildPhases = (
+				0FAB19031918C576003C0FDC /* Sources */,
+				0FAB19041918C576003C0FDC /* Frameworks */,
+				0FAB19051918C576003C0FDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecureSoundFiTransactionEmettor;
+			productName = SecureSoundFiTransaction;
+			productReference = 0FAB19071918C576003C0FDC /* SecureSoundFiTransactionEmettor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0FAB19271918C577003C0FDC /* SecureSoundFiTransactionEmettorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FAB193C1918C577003C0FDC /* Build configuration list for PBXNativeTarget "SecureSoundFiTransactionEmettorTests" */;
+			buildPhases = (
+				0FAB19241918C577003C0FDC /* Sources */,
+				0FAB19251918C577003C0FDC /* Frameworks */,
+				0FAB19261918C577003C0FDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FAB192E1918C577003C0FDC /* PBXTargetDependency */,
+			);
+			name = SecureSoundFiTransactionEmettorTests;
+			productName = SecureSoundFiTransactionTests;
+			productReference = 0FAB19281918C577003C0FDC /* SecureSoundFiTransactionEmettorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FAB18FF1918C576003C0FDC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = SoundFi;
+				TargetAttributes = {
+					0FAB19271918C577003C0FDC = {
+						TestTargetID = 0FAB19061918C576003C0FDC;
+					};
+				};
+			};
+			buildConfigurationList = 0FAB19021918C576003C0FDC /* Build configuration list for PBXProject "SecureSoundFiTransactionEmettor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0FAB18FE1918C576003C0FDC;
+			productRefGroup = 0FAB19081918C576003C0FDC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FAB19061918C576003C0FDC /* SecureSoundFiTransactionEmettor */,
+				0FAB19271918C577003C0FDC /* SecureSoundFiTransactionEmettorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FAB19051918C576003C0FDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FAB19431918C5DC003C0FDC /* Main.storyboard in Resources */,
+				0FAB19231918C577003C0FDC /* Images.xcassets in Resources */,
+				0FAB19151918C576003C0FDC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FAB19261918C577003C0FDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FAB19341918C577003C0FDC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FAB19031918C576003C0FDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FAB19421918C5DC003C0FDC /* ViewController.m in Sources */,
+				0FAB19481918C61A003C0FDC /* smbPitchShift.m in Sources */,
+				0FAB191B1918C576003C0FDC /* AppDelegate.m in Sources */,
+				0FAB19471918C61A003C0FDC /* SoundFiASSession.m in Sources */,
+				0FAB19171918C576003C0FDC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FAB19241918C577003C0FDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FAB19361918C577003C0FDC /* SecureSoundFiTransactionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FAB192E1918C577003C0FDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FAB19061918C576003C0FDC /* SecureSoundFiTransactionEmettor */;
+			targetProxy = 0FAB192D1918C577003C0FDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0FAB19131918C576003C0FDC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FAB19141918C576003C0FDC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0FAB19321918C577003C0FDC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FAB19331918C577003C0FDC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0FAB19371918C577003C0FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0FAB19381918C577003C0FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0FAB193A1918C577003C0FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecureSoundFiTransaction/SecureSoundFiTransactionEmettor-Prefix.pch";
+				INFOPLIST_FILE = "SecureSoundFiTransaction/SecureSoundFiTransactionEmettor-Info.plist";
+				PRODUCT_NAME = SecureSoundFiTransactionEmettor;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0FAB193B1918C577003C0FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecureSoundFiTransaction/SecureSoundFiTransactionEmettor-Prefix.pch";
+				INFOPLIST_FILE = "SecureSoundFiTransaction/SecureSoundFiTransactionEmettor-Info.plist";
+				PRODUCT_NAME = SecureSoundFiTransactionEmettor;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0FAB193D1918C577003C0FDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SecureSoundFiTransaction.app/SecureSoundFiTransaction";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecureSoundFiTransaction/SecureSoundFiTransaction-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SecureSoundFiTransactionTests/SecureSoundFiTransactionEmettorTests-Info.plist";
+				PRODUCT_NAME = SecureSoundFiTransactionEmettorTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0FAB193E1918C577003C0FDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SecureSoundFiTransaction.app/SecureSoundFiTransaction";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecureSoundFiTransaction/SecureSoundFiTransaction-Prefix.pch";
+				INFOPLIST_FILE = "SecureSoundFiTransactionTests/SecureSoundFiTransactionEmettorTests-Info.plist";
+				PRODUCT_NAME = SecureSoundFiTransactionEmettorTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FAB19021918C576003C0FDC /* Build configuration list for PBXProject "SecureSoundFiTransactionEmettor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FAB19371918C577003C0FDC /* Debug */,
+				0FAB19381918C577003C0FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FAB19391918C577003C0FDC /* Build configuration list for PBXNativeTarget "SecureSoundFiTransactionEmettor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FAB193A1918C577003C0FDC /* Debug */,
+				0FAB193B1918C577003C0FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FAB193C1918C577003C0FDC /* Build configuration list for PBXNativeTarget "SecureSoundFiTransactionEmettorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FAB193D1918C577003C0FDC /* Debug */,
+				0FAB193E1918C577003C0FDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0FAB18FF1918C576003C0FDC /* Project object */;
+}

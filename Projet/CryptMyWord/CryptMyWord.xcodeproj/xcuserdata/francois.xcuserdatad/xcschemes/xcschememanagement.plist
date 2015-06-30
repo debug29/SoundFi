@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>CryptMyWord.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>TestExtention.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>TestWidget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0FD23ED8193F134700803A42</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0FD23EEE193F162C00803A42</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0FD4E4F8193DC2F8002D680D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0FD4E519193DC2F8002D680D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

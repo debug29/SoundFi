@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F683653195035CF005FE066 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F683652195035CF005FE066 /* CoreLocation.framework */; };
+		0FA4498919499A8A00E606DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA4498819499A8A00E606DB /* main.m */; };
+		0FA4498C19499A8A00E606DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA4498B19499A8A00E606DB /* AppDelegate.m */; };
+		0FA4498F19499A8A00E606DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA4498E19499A8A00E606DB /* ViewController.m */; };
+		0FA4499219499A8A00E606DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA4499019499A8A00E606DB /* Main.storyboard */; };
+		0FA4499419499A8A00E606DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FA4499319499A8A00E606DB /* Images.xcassets */; };
+		0FA449A019499A8A00E606DB /* AppSoundFi_GeoMarketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA4499F19499A8A00E606DB /* AppSoundFi_GeoMarketTests.m */; };
+		0FA449AD19499AE800E606DB /* smbPitchShift.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA449AA19499AE800E606DB /* smbPitchShift.m */; };
+		0FA449AE19499AE800E606DB /* SoundFiAudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FA449AC19499AE800E606DB /* SoundFiAudioSession.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FA4499A19499A8A00E606DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FA4497B19499A8A00E606DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FA4498219499A8A00E606DB;
+			remoteInfo = AppSoundFi_GeoMarket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F683652195035CF005FE066 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0FA4498319499A8A00E606DB /* AppSoundFi_GeoMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppSoundFi_GeoMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FA4498719499A8A00E606DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FA4498819499A8A00E606DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0FA4498A19499A8A00E606DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0FA4498B19499A8A00E606DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0FA4498D19499A8A00E606DB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0FA4498E19499A8A00E606DB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0FA4499119499A8A00E606DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0FA4499319499A8A00E606DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0FA4499919499A8A00E606DB /* AppSoundFi_GeoMarketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppSoundFi_GeoMarketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FA4499E19499A8A00E606DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FA4499F19499A8A00E606DB /* AppSoundFi_GeoMarketTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppSoundFi_GeoMarketTests.m; sourceTree = "<group>"; };
+		0FA449AA19499AE800E606DB /* smbPitchShift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = smbPitchShift.m; sourceTree = "<group>"; };
+		0FA449AB19499AE800E606DB /* SoundFiAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundFiAudioSession.h; sourceTree = "<group>"; };
+		0FA449AC19499AE800E606DB /* SoundFiAudioSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundFiAudioSession.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FA4498019499A8A00E606DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F683653195035CF005FE066 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FA4499619499A8A00E606DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FA4497A19499A8A00E606DB = {
+			isa = PBXGroup;
+			children = (
+				0F683652195035CF005FE066 /* CoreLocation.framework */,
+				0FA4498519499A8A00E606DB /* AppSoundFi_GeoMarket */,
+				0FA4499C19499A8A00E606DB /* AppSoundFi_GeoMarketTests */,
+				0FA4498419499A8A00E606DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0FA4498419499A8A00E606DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FA4498319499A8A00E606DB /* AppSoundFi_GeoMarket.app */,
+				0FA4499919499A8A00E606DB /* AppSoundFi_GeoMarketTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FA4498519499A8A00E606DB /* AppSoundFi_GeoMarket */ = {
+			isa = PBXGroup;
+			children = (
+				0FA449A919499A9C00E606DB /* SoundEngine */,
+				0FA4498A19499A8A00E606DB /* AppDelegate.h */,
+				0FA4498B19499A8A00E606DB /* AppDelegate.m */,
+				0FA4498D19499A8A00E606DB /* ViewController.h */,
+				0FA4498E19499A8A00E606DB /* ViewController.m */,
+				0FA4499019499A8A00E606DB /* Main.storyboard */,
+				0FA4499319499A8A00E606DB /* Images.xcassets */,
+				0FA4498619499A8A00E606DB /* Supporting Files */,
+			);
+			path = AppSoundFi_GeoMarket;
+			sourceTree = "<group>";
+		};
+		0FA4498619499A8A00E606DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FA4498719499A8A00E606DB /* Info.plist */,
+				0FA4498819499A8A00E606DB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0FA4499C19499A8A00E606DB /* AppSoundFi_GeoMarketTests */ = {
+			isa = PBXGroup;
+			children = (
+				0FA4499F19499A8A00E606DB /* AppSoundFi_GeoMarketTests.m */,
+				0FA4499D19499A8A00E606DB /* Supporting Files */,
+			);
+			path = AppSoundFi_GeoMarketTests;
+			sourceTree = "<group>";
+		};
+		0FA4499D19499A8A00E606DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FA4499E19499A8A00E606DB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0FA449A919499A9C00E606DB /* SoundEngine */ = {
+			isa = PBXGroup;
+			children = (
+				0FA449AA19499AE800E606DB /* smbPitchShift.m */,
+				0FA449AB19499AE800E606DB /* SoundFiAudioSession.h */,
+				0FA449AC19499AE800E606DB /* SoundFiAudioSession.m */,
+			);
+			name = SoundEngine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FA4498219499A8A00E606DB /* AppSoundFi_GeoMarket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FA449A319499A8A00E606DB /* Build configuration list for PBXNativeTarget "AppSoundFi_GeoMarket" */;
+			buildPhases = (
+				0FA4497F19499A8A00E606DB /* Sources */,
+				0FA4498019499A8A00E606DB /* Frameworks */,
+				0FA4498119499A8A00E606DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppSoundFi_GeoMarket;
+			productName = AppSoundFi_GeoMarket;
+			productReference = 0FA4498319499A8A00E606DB /* AppSoundFi_GeoMarket.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0FA4499819499A8A00E606DB /* AppSoundFi_GeoMarketTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FA449A619499A8A00E606DB /* Build configuration list for PBXNativeTarget "AppSoundFi_GeoMarketTests" */;
+			buildPhases = (
+				0FA4499519499A8A00E606DB /* Sources */,
+				0FA4499619499A8A00E606DB /* Frameworks */,
+				0FA4499719499A8A00E606DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FA4499B19499A8A00E606DB /* PBXTargetDependency */,
+			);
+			name = AppSoundFi_GeoMarketTests;
+			productName = AppSoundFi_GeoMarketTests;
+			productReference = 0FA4499919499A8A00E606DB /* AppSoundFi_GeoMarketTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FA4497B19499A8A00E606DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = LeBrun;
+				TargetAttributes = {
+					0FA4498219499A8A00E606DB = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					0FA4499819499A8A00E606DB = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 0FA4498219499A8A00E606DB;
+					};
+				};
+			};
+			buildConfigurationList = 0FA4497E19499A8A00E606DB /* Build configuration list for PBXProject "AppSoundFi_GeoMarket" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0FA4497A19499A8A00E606DB;
+			productRefGroup = 0FA4498419499A8A00E606DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FA4498219499A8A00E606DB /* AppSoundFi_GeoMarket */,
+				0FA4499819499A8A00E606DB /* AppSoundFi_GeoMarketTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FA4498119499A8A00E606DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FA4499219499A8A00E606DB /* Main.storyboard in Resources */,
+				0FA4499419499A8A00E606DB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FA4499719499A8A00E606DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FA4497F19499A8A00E606DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FA449AE19499AE800E606DB /* SoundFiAudioSession.m in Sources */,
+				0FA4498F19499A8A00E606DB /* ViewController.m in Sources */,
+				0FA4498C19499A8A00E606DB /* AppDelegate.m in Sources */,
+				0FA449AD19499AE800E606DB /* smbPitchShift.m in Sources */,
+				0FA4498919499A8A00E606DB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FA4499519499A8A00E606DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FA449A019499A8A00E606DB /* AppSoundFi_GeoMarketTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FA4499B19499A8A00E606DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FA4498219499A8A00E606DB /* AppSoundFi_GeoMarket */;
+			targetProxy = 0FA4499A19499A8A00E606DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0FA4499019499A8A00E606DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FA4499119499A8A00E606DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0FA449A119499A8A00E606DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0FA449A219499A8A00E606DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0FA449A419499A8A00E606DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = AppSoundFi_GeoMarket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0FA449A519499A8A00E606DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = AppSoundFi_GeoMarket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0FA449A719499A8A00E606DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AppSoundFi_GeoMarket.app/AppSoundFi_GeoMarket";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AppSoundFi_GeoMarketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		0FA449A819499A8A00E606DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AppSoundFi_GeoMarket.app/AppSoundFi_GeoMarket";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AppSoundFi_GeoMarketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FA4497E19499A8A00E606DB /* Build configuration list for PBXProject "AppSoundFi_GeoMarket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FA449A119499A8A00E606DB /* Debug */,
+				0FA449A219499A8A00E606DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FA449A319499A8A00E606DB /* Build configuration list for PBXNativeTarget "AppSoundFi_GeoMarket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FA449A419499A8A00E606DB /* Debug */,
+				0FA449A519499A8A00E606DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FA449A619499A8A00E606DB /* Build configuration list for PBXNativeTarget "AppSoundFi_GeoMarketTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FA449A719499A8A00E606DB /* Debug */,
+				0FA449A819499A8A00E606DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0FA4497B19499A8A00E606DB /* Project object */;
+}

@@ -1,0 +1,5 @@
+pod 'FrameAccessor'
+pod "RQShineLabel"
+pod 'FDStatusBarNotifierView'
+pod 'pop'
+pod 'SevenSwitch'

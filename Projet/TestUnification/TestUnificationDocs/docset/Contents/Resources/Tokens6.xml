@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSData+CommonCryptor.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSData(CommonCryptor)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+CommonCrypto.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/AES256EncryptedDataUsingKey:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+CommonCrypto.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)AES256EncryptedDataUsingKey:(id)key error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/AES256EncryptedDataUsingKey:error:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/decryptedAES256DataUsingKey:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+CommonCrypto.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)decryptedAES256DataUsingKey:(id)key error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/decryptedAES256DataUsingKey:error:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/DESEncryptedDataUsingKey:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+CommonCrypto.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)DESEncryptedDataUsingKey:(id)key error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/DESEncryptedDataUsingKey:error:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/decryptedDESDataUsingKey:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+CommonCrypto.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)decryptedDESDataUsingKey:(id)key error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/decryptedDESDataUsingKey:error:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/CASTEncryptedDataUsingKey:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+CommonCrypto.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)CASTEncryptedDataUsingKey:(id)key error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/CASTEncryptedDataUsingKey:error:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/decryptedCASTDataUsingKey:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+CommonCrypto.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)decryptedCASTDataUsingKey:(id)key error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/decryptedCASTDataUsingKey:error:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

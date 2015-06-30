@@ -1,0 +1,941 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SoundFiAudioSession.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SoundFiAudioSession</TokenIdentifier>
+			<Abstract type="html">SoundFiAudioSession is the audio Engine of the SoundFi technologie. This class  include all the differrent mode that SoundFi provide : messaging, locating and paiement</Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SoundFiAudioSession/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/startAudioUnit:::</TokenIdentifier>
+			<Abstract type="html">Allow you to start SoundFi engine for receiving or sending function.</Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+			<Declaration>- (int)startAudioUnit:(SFMessagingMode)mode :</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>mode</Name>
+					<Abstract type="html">The mode that you want to use, SFReceivingMode or SFSendingMode</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">The string to send (only if you use SFSendingMode, otherwise put nil)</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Return 1 if every thing is ok, or 0 in the other case.</Abstract></ReturnValue>
+			<Anchor>//api/name/startAudioUnit:::</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/emissionSampleCalcul:::</TokenIdentifier>
+			<Abstract type="html">Create the audio wave with the required frequency for a given sample.</Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+			<Declaration>- (void)emissionSampleCalcul:(int)frequence :</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>frequence</Name>
+					<Abstract type="html">This is the desired frequency for this sample (int).</Abstract>
+				</Parameter><Parameter>
+					<Name>numFrames</Name>
+					<Abstract type="html">The number of frame that required the audio hardware (int).</Abstract>
+				</Parameter><Parameter>
+					<Name>buffer</Name>
+					<Abstract type="html">The audio sample, store as a Float32 array.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/emissionSampleCalcul:::</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/getASCIIFrequency</TokenIdentifier>
+			<Abstract type="html">Coordinate the state of the emission and asign a frequency to a caracter.</Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+			<Declaration>- (int)getASCIIFrequency</Declaration>
+			
+			<ReturnValue><Abstract type="html">Return the frequency associate with the caracter or the init/stop frequency</Abstract></ReturnValue>
+			<Anchor>//api/name/getASCIIFrequency</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/checkTimeOut</TokenIdentifier>
+			<Abstract type="html">Check if the comunication time out, use by all soundFi mode.</Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/checkProcessTimeOut</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)checkTimeOut</Declaration>
+			
+			
+			<Anchor>//api/name/checkTimeOut</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/checkProcessTimeOut</TokenIdentifier>
+			<Abstract type="html">Check if there is TimeOut during one step of the paiement process.</Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/checkTimeOut</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)checkProcessTimeOut</Declaration>
+			
+			
+			<Anchor>//api/name/checkProcessTimeOut</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/switchBackgroundChanged:</TokenIdentifier>
+			<Abstract type="html">Fonction Call to enable or disable background listenning. (&lt;b class=&quot;deprecated&quot;&gt;Deprecated:&lt;/b&gt;&lt;span class=&quot;deprecated&quot;&gt; Replace with : enableBackGround and disableBackground.&lt;/span&gt;)</Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/enableBackground</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)switchBackgroundChanged:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/switchBackgroundChanged:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/sampleTreatment:</TokenIdentifier>
+			<Abstract type="html">This function deal with the recepetion state, for background and foreground.</Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/geolocalisationReceptionSampleTreatment</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/messagingReceptionSampleTreatment</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/paiementReceptionSampleTreatment</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)sampleTreatment:(int)numFrames</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>numFrames</Name>
+					<Abstract type="html">The number of frame (int) that the FFT must perform.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sampleTreatment:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/localisationModeIsEnable</TokenIdentifier>
+			<Abstract type="html">Check if the localisation mode is enable</Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/activateSoundFiLocalisation</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/desactivateSoundFiLocalisation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)localisationModeIsEnable</Declaration>
+			
+			<ReturnValue><Abstract type="html">TRUE if the localisation mode is enable</Abstract></ReturnValue>
+			<Anchor>//api/name/localisationModeIsEnable</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/messagingModeIsEnable</TokenIdentifier>
+			<Abstract type="html">Check if the messaging mode is enable</Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/activateSoundFiMessaging</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/desactivateSoundFiMessaging</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)messagingModeIsEnable</Declaration>
+			
+			<ReturnValue><Abstract type="html">TRUE if the messaging mode is enable</Abstract></ReturnValue>
+			<Anchor>//api/name/messagingModeIsEnable</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/paiementModeIsEnable</TokenIdentifier>
+			<Abstract type="html">Check if the paiement mode is enable</Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/activateSoundFiPaiement</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/desactivateSoundFiPaiement</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)paiementModeIsEnable</Declaration>
+			
+			<ReturnValue><Abstract type="html">TRUE if the paiement mode is enable</Abstract></ReturnValue>
+			<Anchor>//api/name/paiementModeIsEnable</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/backgroundIsEnable</TokenIdentifier>
+			<Abstract type="html">Check if the background is enable</Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/enableBackground</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (BOOL)backgroundIsEnable</Declaration>
+			
+			<ReturnValue><Abstract type="html">TRUE if the background is enable</Abstract></ReturnValue>
+			<Anchor>//api/name/backgroundIsEnable</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/engineIsRunning</TokenIdentifier>
+			<Abstract type="html">Check if the engine is running</Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)engineIsRunning</Declaration>
+			
+			<ReturnValue><Abstract type="html">TRUE if the engine is running</Abstract></ReturnValue>
+			<Anchor>//api/name/engineIsRunning</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/enableBackground</TokenIdentifier>
+			<Abstract type="html">Allow background processing</Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/desableBackground</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/backgroundIsEnable</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)enableBackground</Declaration>
+			
+			
+			<Anchor>//api/name/enableBackground</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/desableBackground</TokenIdentifier>
+			<Abstract type="html">Avoir background processing</Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/enableBackground</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/backgroundIsEnable</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)desableBackground</Declaration>
+			
+			
+			<Anchor>//api/name/desableBackground</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/startpaiementProcessing</TokenIdentifier>
+			<Abstract type="html">Call at start of paiement</Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/endPaiementProcess</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)startpaiementProcessing</Declaration>
+			
+			
+			<Anchor>//api/name/startpaiementProcessing</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/changeMinimumVolume:</TokenIdentifier>
+			<Abstract type="html">Allow you to set the minimum required volume for sending message</Abstract>
+			<DeclaredIn>SoundFiAudioSession.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/volumeControl</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)changeMinimumVolume:(float)newMinVolume</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>newMinVolume</Name>
+					<Abstract type="html">The new minimum volume you want to set</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/changeMinimumVolume:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/init</TokenIdentifier>
+			<Abstract type="html">This is the SoundFiAudioSession init method, this method init every mode (messaging,paiemement and localisation).</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/initAudioStreams</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (SoundFiAudioSession *)init</Declaration>
+			
+			<ReturnValue><Abstract type="html">Return an instance of SoundFiAudioSession.</Abstract></ReturnValue>
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/initPaiement</TokenIdentifier>
+			<Abstract type="html">This method deal with the initilisation of the paiement variables</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/init</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)initPaiement</Declaration>
+			
+			
+			<Anchor>//api/name/initPaiement</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/initGeoloc</TokenIdentifier>
+			<Abstract type="html">This method deal with the initilisation of the audioEngine&apos;s localisation</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/init</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)initGeoloc</Declaration>
+			
+			
+			<Anchor>//api/name/initGeoloc</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/initAudioStreams</TokenIdentifier>
+			<Abstract type="html">This method deal with the initilisation of the audioStream, mainly the AudioGraph</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/init</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (int)initAudioStreams</Declaration>
+			
+			<ReturnValue><Abstract type="html">1 un case of error, else 0</Abstract></ReturnValue>
+			<Anchor>//api/name/initAudioStreams</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/fftSetup</TokenIdentifier>
+			<Abstract type="html">Set up variable and array for the fft.</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/init</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)fftSetup</Declaration>
+			
+			
+			<Anchor>//api/name/fftSetup</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/emissionSetup</TokenIdentifier>
+			<Abstract type="html">Like an emissionInit, this function setup the audioUnit for emission</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/init</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)emissionSetup</Declaration>
+			
+			
+			<Anchor>//api/name/emissionSetup</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/setupCallback</TokenIdentifier>
+			<Abstract type="html">This function init some variables use in the callback methods</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/init</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)setupCallback</Declaration>
+			
+			
+			<Anchor>//api/name/setupCallback</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/initAudioSession</TokenIdentifier>
+			<Abstract type="html">Init AudioSession&apos;s parameters</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/init</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (int)initAudioSession</Declaration>
+			
+			
+			<Anchor>//api/name/initAudioSession</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/geolocalisationReceptionSampleTreatment</TokenIdentifier>
+			<Abstract type="html">Treatment of geolocalisation frequency.</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+			<Declaration>- (void)geolocalisationReceptionSampleTreatment</Declaration>
+			
+			
+			<Anchor>//api/name/geolocalisationReceptionSampleTreatment</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/messagingReceptionSampleTreatment</TokenIdentifier>
+			<Abstract type="html">Treatment of simple messenging frequency</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+			<Declaration>- (void)messagingReceptionSampleTreatment</Declaration>
+			
+			
+			<Anchor>//api/name/messagingReceptionSampleTreatment</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/paiementReceptionSampleTreatment</TokenIdentifier>
+			<Abstract type="html">Treatment if paiement frequency (very similar to messaging frequency)</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+			<Declaration>- (void)paiementReceptionSampleTreatment</Declaration>
+			
+			
+			<Anchor>//api/name/paiementReceptionSampleTreatment</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/zoneDetection:</TokenIdentifier>
+			<Abstract type="html">Use to deal with the location of the user in function of the received frequency.</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/geolocalisationReceptionSampleTreatment</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)zoneDetection:(int *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The array of frequency (int* 100)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/zoneDetection:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/locationManager:didUpdateToLocation:fromLocation:</TokenIdentifier>
+			<Abstract type="html">Delegate method for LocationManager to update user location.</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+			<Declaration>- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation</Declaration>
+			
+			
+			<Anchor>//api/name/locationManager:didUpdateToLocation:fromLocation:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/changeLocationManagerAccuracy</TokenIdentifier>
+			<Abstract type="html">Increse the accuracy of the GPS for 1 location.</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+			<Declaration>- (void)changeLocationManagerAccuracy</Declaration>
+			
+			
+			<Anchor>//api/name/changeLocationManagerAccuracy</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/changeGeolockTimer:</TokenIdentifier>
+			<Abstract type="html">Permit to change the interval of the timer for user localisation.</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+			<Declaration>- (void)changeGeolockTimer:(int)duree</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duree</Name>
+					<Abstract type="html">The new value representing the time between to fire of the timer</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/changeGeolockTimer:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/interruptionDetected:</TokenIdentifier>
+			<Abstract type="html">Detect the interruption flag of the audioSession.</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+			<Declaration>- (void)interruptionDetected:(NSNotification *)notification</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>notification</Name>
+					<Abstract type="html">The NSNotification that was raised by the interruption</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/interruptionDetected:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/analysisPhase1</TokenIdentifier>
+			<Abstract type="html">This is the first step of the analysis</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/startAnalysis</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)analysisPhase1</Declaration>
+			
+			
+			<Anchor>//api/name/analysisPhase1</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/analysisPhase2</TokenIdentifier>
+			<Abstract type="html">Second step of the analysis phase</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/startAnalysis</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)analysisPhase2</Declaration>
+			
+			
+			<Anchor>//api/name/analysisPhase2</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/analysisPhase3</TokenIdentifier>
+			<Abstract type="html">Third step of the analysis phase</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/startAnalysis</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)analysisPhase3</Declaration>
+			
+			
+			<Anchor>//api/name/analysisPhase3</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/analysisPhase4</TokenIdentifier>
+			<Abstract type="html">Fourth step of the analysis phase</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/startAnalysis</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/analysisPhase2</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)analysisPhase4</Declaration>
+			
+			
+			<Anchor>//api/name/analysisPhase4</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/analysisPhase5</TokenIdentifier>
+			<Abstract type="html">Fifth step of the analysis phase</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/startAnalysis</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)analysisPhase5</Declaration>
+			
+			
+			<Anchor>//api/name/analysisPhase5</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/analysisPhase6</TokenIdentifier>
+			<Abstract type="html">Sixth step of the analysis phase</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/startAnalysis</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)analysisPhase6</Declaration>
+			
+			
+			<Anchor>//api/name/analysisPhase6</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/startAnalysis</TokenIdentifier>
+			<Abstract type="html">Analysis of the message receive during the transaction</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/analysisPhase1</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/analysisPhase2</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/analysisPhase3</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/analysisPhase4</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/analysisPhase5</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/analysisPhase6</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)startAnalysis</Declaration>
+			
+			
+			<Anchor>//api/name/startAnalysis</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/stopProcessingAudio</TokenIdentifier>
+			<Abstract type="html">This function allow you to stop listenning or sending audio</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+			<Declaration>- (int)stopProcessingAudio</Declaration>
+			
+			<ReturnValue><Abstract type="html">Return 1 if every thing is ok</Abstract></ReturnValue>
+			<Anchor>//api/name/stopProcessingAudio</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/relaunchReception</TokenIdentifier>
+			<Abstract type="html">This function is use after finishing a message sending</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+			<Declaration>- (void)relaunchReception</Declaration>
+			
+			
+			<Anchor>//api/name/relaunchReception</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/volumeControl</TokenIdentifier>
+			<Abstract type="html">Control the app volume for sending message</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)volumeControl</Declaration>
+			
+			<ReturnValue><Abstract type="html">TRUE if volume is superior to the minimal require</Abstract></ReturnValue>
+			<Anchor>//api/name/volumeControl</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/activateSoundFiLocalisation</TokenIdentifier>
+			<Abstract type="html">Activate the location mode</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/desactivateSoundFiLocalisation</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/localisationModeIsEnable</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)activateSoundFiLocalisation</Declaration>
+			
+			
+			<Anchor>//api/name/activateSoundFiLocalisation</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/activateSoundFiMessaging</TokenIdentifier>
+			<Abstract type="html">Activate the messaging mode</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/desactivateSoundFiMessaging</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/messagingModeIsEnable</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)activateSoundFiMessaging</Declaration>
+			
+			
+			<Anchor>//api/name/activateSoundFiMessaging</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/activateSoundFiPaiement</TokenIdentifier>
+			<Abstract type="html">Activate the paiement mode</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/desactivateSoundFiPaiement</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/paiementModeIsEnable</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)activateSoundFiPaiement</Declaration>
+			
+			
+			<Anchor>//api/name/activateSoundFiPaiement</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/desactivateSoundFiLocalisation</TokenIdentifier>
+			<Abstract type="html">Desactivate the location mode</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/activateSoundFiLocalisation</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)desactivateSoundFiLocalisation</Declaration>
+			
+			
+			<Anchor>//api/name/desactivateSoundFiLocalisation</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/desactivateSoundFiMessaging</TokenIdentifier>
+			<Abstract type="html">Desactivate messaging mode</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/desactivateSoundFiMessaging</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/messagingModeIsEnable</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)desactivateSoundFiMessaging</Declaration>
+			
+			
+			<Anchor>//api/name/desactivateSoundFiMessaging</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/desactivateSoundFiPaiement</TokenIdentifier>
+			<Abstract type="html">Desactivate the paiement mode</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/activateSoundFiPaiement</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/paiementModeIsEnable</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)desactivateSoundFiPaiement</Declaration>
+			
+			
+			<Anchor>//api/name/desactivateSoundFiPaiement</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/enteredBackground</TokenIdentifier>
+			<Abstract type="html">Call to perform background task</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/enteredForeground</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)enteredBackground</Declaration>
+			
+			
+			<Anchor>//api/name/enteredBackground</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/enteredForeground</TokenIdentifier>
+			<Abstract type="html">Call to perform background task</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/enteredBackground</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)enteredForeground</Declaration>
+			
+			
+			<Anchor>//api/name/enteredForeground</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/transactionUpdate:</TokenIdentifier>
+			<Abstract type="html">Call to perform background task</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+			<Declaration>- (void)transactionUpdate:(NSString *)theMessage</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>theMessage</Name>
+					<Abstract type="html">The last message received by the cash register.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/transactionUpdate:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/alertView:clickedButtonAtIndex:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+			<Declaration>- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex</Declaration>
+			
+			
+			<Anchor>//api/name/alertView:clickedButtonAtIndex:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/endPaiementProcess</TokenIdentifier>
+			<Abstract type="html">Call at end of paiement</Abstract>
+			<DeclaredIn>SoundFiAudioSession.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/SoundFiAudioSession/startpaiementProcessing</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)endPaiementProcess</Declaration>
+			
+			
+			<Anchor>//api/name/endPaiementProcess</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

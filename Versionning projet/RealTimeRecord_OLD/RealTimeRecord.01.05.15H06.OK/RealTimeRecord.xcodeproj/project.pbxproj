@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FEACEAE18FFFB23007589D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEACEAD18FFFB23007589D9 /* Foundation.framework */; };
+		0FEACEB018FFFB23007589D9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEACEAF18FFFB23007589D9 /* CoreGraphics.framework */; };
+		0FEACEB218FFFB23007589D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEACEB118FFFB23007589D9 /* UIKit.framework */; };
+		0FEACEB818FFFB23007589D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FEACEB618FFFB23007589D9 /* InfoPlist.strings */; };
+		0FEACEBA18FFFB23007589D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEACEB918FFFB23007589D9 /* main.m */; };
+		0FEACEBE18FFFB23007589D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEACEBD18FFFB23007589D9 /* AppDelegate.m */; };
+		0FEACEC118FFFB23007589D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FEACEBF18FFFB23007589D9 /* Main.storyboard */; };
+		0FEACEC418FFFB23007589D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEACEC318FFFB23007589D9 /* ViewController.m */; };
+		0FEACEC618FFFB23007589D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FEACEC518FFFB23007589D9 /* Images.xcassets */; };
+		0FEACECD18FFFB23007589D9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEACECC18FFFB23007589D9 /* XCTest.framework */; };
+		0FEACECE18FFFB23007589D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEACEAD18FFFB23007589D9 /* Foundation.framework */; };
+		0FEACECF18FFFB23007589D9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEACEB118FFFB23007589D9 /* UIKit.framework */; };
+		0FEACED718FFFB23007589D9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FEACED518FFFB23007589D9 /* InfoPlist.strings */; };
+		0FEACED918FFFB23007589D9 /* RealTimeRecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEACED818FFFB23007589D9 /* RealTimeRecordTests.m */; };
+		0FEACEE418FFFB35007589D9 /* AudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEACEE318FFFB35007589D9 /* AudioController.m */; };
+		0FEACEE6190656D3007589D9 /* smbPitchShift.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEACEE5190656D3007589D9 /* smbPitchShift.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FEACED018FFFB23007589D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FEACEA218FFFB23007589D9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FEACEA918FFFB23007589D9;
+			remoteInfo = RealTimeRecord;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FEACEAA18FFFB23007589D9 /* RealTimeRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealTimeRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FEACEAD18FFFB23007589D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0FEACEAF18FFFB23007589D9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0FEACEB118FFFB23007589D9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0FEACEB518FFFB23007589D9 /* RealTimeRecord-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RealTimeRecord-Info.plist"; sourceTree = "<group>"; };
+		0FEACEB718FFFB23007589D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0FEACEB918FFFB23007589D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0FEACEBB18FFFB23007589D9 /* RealTimeRecord-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RealTimeRecord-Prefix.pch"; sourceTree = "<group>"; };
+		0FEACEBC18FFFB23007589D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0FEACEBD18FFFB23007589D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0FEACEC018FFFB23007589D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0FEACEC218FFFB23007589D9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0FEACEC318FFFB23007589D9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0FEACEC518FFFB23007589D9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0FEACECB18FFFB23007589D9 /* RealTimeRecordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealTimeRecordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FEACECC18FFFB23007589D9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0FEACED418FFFB23007589D9 /* RealTimeRecordTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RealTimeRecordTests-Info.plist"; sourceTree = "<group>"; };
+		0FEACED618FFFB23007589D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0FEACED818FFFB23007589D9 /* RealTimeRecordTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealTimeRecordTests.m; sourceTree = "<group>"; };
+		0FEACEE218FFFB35007589D9 /* AudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioController.h; path = ../AudioController.h; sourceTree = "<group>"; };
+		0FEACEE318FFFB35007589D9 /* AudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioController.m; path = ../AudioController.m; sourceTree = "<group>"; };
+		0FEACEE5190656D3007589D9 /* smbPitchShift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = smbPitchShift.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FEACEA718FFFB23007589D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FEACEB018FFFB23007589D9 /* CoreGraphics.framework in Frameworks */,
+				0FEACEB218FFFB23007589D9 /* UIKit.framework in Frameworks */,
+				0FEACEAE18FFFB23007589D9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FEACEC818FFFB23007589D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FEACECD18FFFB23007589D9 /* XCTest.framework in Frameworks */,
+				0FEACECF18FFFB23007589D9 /* UIKit.framework in Frameworks */,
+				0FEACECE18FFFB23007589D9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FEACEA118FFFB23007589D9 = {
+			isa = PBXGroup;
+			children = (
+				0FEACEB318FFFB23007589D9 /* RealTimeRecord */,
+				0FEACED218FFFB23007589D9 /* RealTimeRecordTests */,
+				0FEACEAC18FFFB23007589D9 /* Frameworks */,
+				0FEACEAB18FFFB23007589D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0FEACEAB18FFFB23007589D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FEACEAA18FFFB23007589D9 /* RealTimeRecord.app */,
+				0FEACECB18FFFB23007589D9 /* RealTimeRecordTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FEACEAC18FFFB23007589D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FEACEAD18FFFB23007589D9 /* Foundation.framework */,
+				0FEACEAF18FFFB23007589D9 /* CoreGraphics.framework */,
+				0FEACEB118FFFB23007589D9 /* UIKit.framework */,
+				0FEACECC18FFFB23007589D9 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0FEACEB318FFFB23007589D9 /* RealTimeRecord */ = {
+			isa = PBXGroup;
+			children = (
+				0FEACEBC18FFFB23007589D9 /* AppDelegate.h */,
+				0FEACEBD18FFFB23007589D9 /* AppDelegate.m */,
+				0FEACEED19093F22007589D9 /* Audio Stuff */,
+				0FEACEEC19093F0B007589D9 /* ViewController */,
+				0FEACEC518FFFB23007589D9 /* Images.xcassets */,
+				0FEACEB418FFFB23007589D9 /* Supporting Files */,
+			);
+			path = RealTimeRecord;
+			sourceTree = "<group>";
+		};
+		0FEACEB418FFFB23007589D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FEACEB518FFFB23007589D9 /* RealTimeRecord-Info.plist */,
+				0FEACEB618FFFB23007589D9 /* InfoPlist.strings */,
+				0FEACEB918FFFB23007589D9 /* main.m */,
+				0FEACEBB18FFFB23007589D9 /* RealTimeRecord-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0FEACED218FFFB23007589D9 /* RealTimeRecordTests */ = {
+			isa = PBXGroup;
+			children = (
+				0FEACED818FFFB23007589D9 /* RealTimeRecordTests.m */,
+				0FEACED318FFFB23007589D9 /* Supporting Files */,
+			);
+			path = RealTimeRecordTests;
+			sourceTree = "<group>";
+		};
+		0FEACED318FFFB23007589D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FEACED418FFFB23007589D9 /* RealTimeRecordTests-Info.plist */,
+				0FEACED518FFFB23007589D9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0FEACEEC19093F0B007589D9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0FEACEC218FFFB23007589D9 /* ViewController.h */,
+				0FEACEC318FFFB23007589D9 /* ViewController.m */,
+				0FEACEBF18FFFB23007589D9 /* Main.storyboard */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		0FEACEED19093F22007589D9 /* Audio Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				0FEACEE218FFFB35007589D9 /* AudioController.h */,
+				0FEACEE318FFFB35007589D9 /* AudioController.m */,
+				0FEACEE5190656D3007589D9 /* smbPitchShift.m */,
+			);
+			name = "Audio Stuff";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FEACEA918FFFB23007589D9 /* RealTimeRecord */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FEACEDC18FFFB23007589D9 /* Build configuration list for PBXNativeTarget "RealTimeRecord" */;
+			buildPhases = (
+				0FEACEA618FFFB23007589D9 /* Sources */,
+				0FEACEA718FFFB23007589D9 /* Frameworks */,
+				0FEACEA818FFFB23007589D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RealTimeRecord;
+			productName = RealTimeRecord;
+			productReference = 0FEACEAA18FFFB23007589D9 /* RealTimeRecord.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0FEACECA18FFFB23007589D9 /* RealTimeRecordTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FEACEDF18FFFB23007589D9 /* Build configuration list for PBXNativeTarget "RealTimeRecordTests" */;
+			buildPhases = (
+				0FEACEC718FFFB23007589D9 /* Sources */,
+				0FEACEC818FFFB23007589D9 /* Frameworks */,
+				0FEACEC918FFFB23007589D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FEACED118FFFB23007589D9 /* PBXTargetDependency */,
+			);
+			name = RealTimeRecordTests;
+			productName = RealTimeRecordTests;
+			productReference = 0FEACECB18FFFB23007589D9 /* RealTimeRecordTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FEACEA218FFFB23007589D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = SoundFi;
+				TargetAttributes = {
+					0FEACECA18FFFB23007589D9 = {
+						TestTargetID = 0FEACEA918FFFB23007589D9;
+					};
+				};
+			};
+			buildConfigurationList = 0FEACEA518FFFB23007589D9 /* Build configuration list for PBXProject "RealTimeRecord" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0FEACEA118FFFB23007589D9;
+			productRefGroup = 0FEACEAB18FFFB23007589D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FEACEA918FFFB23007589D9 /* RealTimeRecord */,
+				0FEACECA18FFFB23007589D9 /* RealTimeRecordTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FEACEA818FFFB23007589D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FEACEC618FFFB23007589D9 /* Images.xcassets in Resources */,
+				0FEACEB818FFFB23007589D9 /* InfoPlist.strings in Resources */,
+				0FEACEC118FFFB23007589D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FEACEC918FFFB23007589D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FEACED718FFFB23007589D9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FEACEA618FFFB23007589D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FEACEC418FFFB23007589D9 /* ViewController.m in Sources */,
+				0FEACEE6190656D3007589D9 /* smbPitchShift.m in Sources */,
+				0FEACEBE18FFFB23007589D9 /* AppDelegate.m in Sources */,
+				0FEACEE418FFFB35007589D9 /* AudioController.m in Sources */,
+				0FEACEBA18FFFB23007589D9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FEACEC718FFFB23007589D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FEACED918FFFB23007589D9 /* RealTimeRecordTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FEACED118FFFB23007589D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FEACEA918FFFB23007589D9 /* RealTimeRecord */;
+			targetProxy = 0FEACED018FFFB23007589D9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0FEACEB618FFFB23007589D9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FEACEB718FFFB23007589D9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0FEACEBF18FFFB23007589D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FEACEC018FFFB23007589D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0FEACED518FFFB23007589D9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FEACED618FFFB23007589D9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0FEACEDA18FFFB23007589D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0FEACEDB18FFFB23007589D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0FEACEDD18FFFB23007589D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RealTimeRecord/RealTimeRecord-Prefix.pch";
+				INFOPLIST_FILE = "RealTimeRecord/RealTimeRecord-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0FEACEDE18FFFB23007589D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RealTimeRecord/RealTimeRecord-Prefix.pch";
+				INFOPLIST_FILE = "RealTimeRecord/RealTimeRecord-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0FEACEE018FFFB23007589D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RealTimeRecord.app/RealTimeRecord";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RealTimeRecord/RealTimeRecord-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RealTimeRecordTests/RealTimeRecordTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0FEACEE118FFFB23007589D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RealTimeRecord.app/RealTimeRecord";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RealTimeRecord/RealTimeRecord-Prefix.pch";
+				INFOPLIST_FILE = "RealTimeRecordTests/RealTimeRecordTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FEACEA518FFFB23007589D9 /* Build configuration list for PBXProject "RealTimeRecord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FEACEDA18FFFB23007589D9 /* Debug */,
+				0FEACEDB18FFFB23007589D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FEACEDC18FFFB23007589D9 /* Build configuration list for PBXNativeTarget "RealTimeRecord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FEACEDD18FFFB23007589D9 /* Debug */,
+				0FEACEDE18FFFB23007589D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FEACEDF18FFFB23007589D9 /* Build configuration list for PBXNativeTarget "RealTimeRecordTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FEACEE018FFFB23007589D9 /* Debug */,
+				0FEACEE118FFFB23007589D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0FEACEA218FFFB23007589D9 /* Project object */;
+}

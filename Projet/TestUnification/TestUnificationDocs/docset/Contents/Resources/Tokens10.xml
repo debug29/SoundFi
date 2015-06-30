@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSError+CommonCryptoErrorDomain.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSError(CommonCryptoErrorDomain)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+CommonCrypto.h</DeclaredIn>
+            
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSError/errorWithCCCryptorStatus:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+CommonCrypto.h</DeclaredIn>
+			
+			<Declaration>+ (NSError *)errorWithCCCryptorStatus:(CCCryptorStatus)status</Declaration>
+			
+			
+			<Anchor>//api/name/errorWithCCCryptorStatus:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

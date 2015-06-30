@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >
+   <head>
+       <title>Walilolo</title>
+       <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+   </head>
+   <body>
+   	<script type="text/javascript">
+   		function convertion(){
+   			var entree = prompt("Entrer une valeur pour obtenir son carré");
+   			alert(entree*entree);
+   		}
+
+   		function somme(nbr){
+   			var s = 0;
+   			var tab = somme.arguments;
+   			for(var i=0;i<tab.length;i++){
+   				s = s + tab[i];
+   			}
+   			alert(s);
+   		}
+
+      function nb_aleatoire(min, max){
+        var nb = min + (max-min+1)*Math.random();
+        return Math.floor(nb);
+      }
+
+      function plusOuMoins(){
+        var ok=false;
+        var compteur = 0;
+        var choixUtil;
+        var nbrAlea = nb_aleatoire(0,100);
+        var nbrAleaNext;
+        while(!ok){
+          choixUtil = prompt('Plus ou moins que ' + nbrAlea + ' ? (min 0 max 100)');
+          nbrAleaNext = nb_aleatoire(0,100);
+          if (choixUtil == "plus"){
+            if (nbrAleaNext>nbrAlea) {
+              ok = true;
+            };
+          }
+          else if(choixUtil == "moins"){
+            if (nbrAleaNext<nbrAlea) {
+              ok = true;
+            };
+          }
+          nbrAlea=nbrAleaNext;
+          compteur = compteur + 1;
+        }
+        alert('Felicitation le chiffre etait :' + nbrAlea + ', il vous aura fallu ' + compteur + ' essais');
+      }
+
+      var personne = {Prenom:"Francois" , Nom:"Le Brun", Age:23};
+      alert(personne.Prenom + personne.Nom + personne.Age);
+
+   	</script>
+   	<button onclick="plusOuMoins();">Test</button>
+   </body>
+</html>
